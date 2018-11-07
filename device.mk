@@ -305,6 +305,8 @@ PRODUCT_PACKAGES += \
     Tag
 
 # Overlays
+PRODUCT_ENFORCE_RRO_TARGETS := *
+
 PRODUCT_PACKAGES += \
     CarrierConfigOverlayVeux \
     DialerOverlayVeux \
