@@ -11,6 +11,7 @@ ro.sf.blurs_are_expensive=1
 ro.surface_flinger.supports_background_blur=1
 
 # Display
+debug.sdm.support_writeback=0
 ro.surface_flinger.set_display_power_timer_ms=1000
 ro.surface_flinger.set_idle_timer_ms=3000
 ro.surface_flinger.set_touch_timer_ms=3000
