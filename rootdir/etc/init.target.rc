@@ -295,3 +295,8 @@ on property:graphics.display.kernel_idle_timer.enabled=true
 on property:graphics.display.kernel_idle_timer.enabled=false
     # Disable aggressive idle mode switching
     write /sys/devices/platform/soc/soc:qcom,dsi-display-primary/idle_mode "none"
+
+on property:sys.boot_completed=1
+    # Back to default VM settings
+    write /proc/sys/vm/dirty_expire_centisecs 3000
+    write /proc/sys/vm/dirty_background_ratio 10
