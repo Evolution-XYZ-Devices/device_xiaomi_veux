@@ -91,7 +91,6 @@ TARGET_RECOVERY_DEVICE_MODULES := init_xiaomi_veux
 
 # Media
 TARGET_USES_ION := true
-TARGET_DISABLED_UBWC := true
 
 # Kernel
 BOARD_INCLUDE_DTB_IN_BOOTIMG := true
