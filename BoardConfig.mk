@@ -89,9 +89,6 @@ ODM_MANIFEST_NFC_FILES := $(DEVICE_PATH)/manifest_nfc.xml
 TARGET_INIT_VENDOR_LIB := //$(DEVICE_PATH):init_xiaomi_veux
 TARGET_RECOVERY_DEVICE_MODULES := init_xiaomi_veux
 
-# Media
-TARGET_USES_ION := true
-
 # Kernel
 BOARD_INCLUDE_DTB_IN_BOOTIMG := true
 BOARD_KERNEL_BASE := 0x00000000
