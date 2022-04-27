@@ -653,14 +653,6 @@ service iprenew_wigig0 /system/bin/dhcpcd -n
     disabled
     oneshot
 
-#+ExtR HONGMI-89895 jiyanan 20210922 add for capture wifi full log start
-service vendor.cnss_diag /vendor/bin/cnss_diag -q -f
-    class late_start
-    user system
-    group system wifi inet net_admin sdcard_rw media_rw diag
-    disabled
-    oneshot
-
 service vendor.tcpdump /vendor/bin/tcpdump -i any -W 2 -C 2 -s 134 -w /data/vendor/wlan_logs_t/tcpdump.pcap
     class main
     disabled
