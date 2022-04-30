@@ -21,6 +21,10 @@
 /mnt/vendor/dsp/fastrpc_shell_3                                         u:object_r:public_adsprpcd_file:s0
 
 # Fingerprint
+/vendor/bin/hw/android\.hardware\.biometrics\.fingerprint@2.3-service\.xiaomi     u:object_r:hal_fingerprint_default_exec:s0
+/vendor/bin/hw/vendor\.silead\.hardware\.fingerprintext@1\.0-service     u:object_r:hal_fingerprint_default_exec:s0
+
+# Fingerprint devices
 /dev/goodix_fp										u:object_r:vendor_fingerprint_device:s0
 /dev/silead_fp										u:object_r:vendor_fingerprint_device:s0
 /dev/silead_s.*										u:object_r:vendor_fingerprint_device:s0
