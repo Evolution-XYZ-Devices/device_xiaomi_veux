@@ -13,3 +13,6 @@ vendor.xiaomi.hardware.mlipay::IMlipayService					u:object_r:hal_mlipay_hwservic
 # NFC
 vendor.nxp.nxpnfc::INxpNfc							u:object_r:hal_nfc_hwservice:s0
 vendor.nxp.nxpnfclegacy::INxpNfcLegacy						u:object_r:hal_nfc_hwservice:s0
+
+# Dolby
+vendor.dolby.hardware.dms::IDms                                            u:object_r:hal_dms_hwservice:s0
