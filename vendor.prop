@@ -157,6 +157,8 @@ ro.vendor.display.svi=1
 vendor.display.svi.config=1
 vendor.display.svi.config_path=/vendor/etc/SVIConfig.xml
 ro.vendor.display.sensortype=2
+persist.sys.sf.color_mode=9
+persist.sys.sf.native_mode=2
 
 # DPM
 persist.vendor.dpm.feature=1
@@ -185,7 +187,6 @@ debug.sf.high_fps_late_app_phase_offset_ns=1000000
 debug.sf.high_fps_late_sf_phase_offset_ns=-4000000
 debug.sf.frame_rate_multiple_threshold=120
 debug.sf.hw=0
-persist.sys.sf.color_mode=0
 persist.sys.sf.color_saturation=1.0
 ro.hardware.egl=adreno
 ro.hardware.vulkan=adreno
