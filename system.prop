@@ -10,6 +10,7 @@ debug.hwui.skia_atrace_enabled=false
 # Graphics
 debug.sf.disable_backpressure=1
 debug.sf.enable_hwc_vds=1
+ro.sf.force_hwc_brightness=1
 
 # Hwui properties
 ro.hwui.texture_cache_size=72
