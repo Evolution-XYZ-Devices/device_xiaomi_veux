@@ -17,5 +17,6 @@
 runtime_resource_overlay {
     name: "SettingsOverlayVeux",
     sdk_version: "current",
-    product_specific: true
+    resource_dirs: ["res"],
+    vendor: true,
 }
