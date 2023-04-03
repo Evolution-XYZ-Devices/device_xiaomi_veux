@@ -49,6 +49,7 @@ vendor.post_boot.parsed=1
 # Radio
 DEVICE_PROVISIONED=1
 ril.subscription.types=NV,RUIM
+persist.sys.radio.force_lte_ca=true
 
 # Radio Video Calling
 persist.vendor.radio.vdp_on_ims_cap=1
