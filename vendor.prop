@@ -227,8 +227,6 @@ ro.apk_verity.mode=2
 vendor.gatekeeper.disable_spu=true
 
 # Graphics
-debug.egl.hw=0
-debug.mdpcomp.logs=0
 debug.hwui.use_hint_manager=true
 debug.hwui.target_cpu_time_percent=30
 debug.sf.auto_latch_unsignaled=true
@@ -241,7 +239,6 @@ debug.sf.high_fps_early_phase_offset_ns=-4000000
 debug.sf.high_fps_late_app_phase_offset_ns=1000000
 debug.sf.high_fps_late_sf_phase_offset_ns=-4000000
 debug.sf.frame_rate_multiple_threshold=120
-debug.sf.hw=1
 debug.sf.enable_hwc_vds=0
 debug.sf.predict_hwc_composition_strategy=0
 persist.sys.sf.color_saturation=1.0
