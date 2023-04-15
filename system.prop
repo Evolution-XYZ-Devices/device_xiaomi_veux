@@ -43,6 +43,9 @@ ro.vendor.qti.va_aosp.support=1
 # Qcom
 ro.vendor.qti.sys.fw.bservice_enable=true
 
+# QTI PowerHal
+vendor.post_boot.parsed=1
+
 # Radio
 DEVICE_PROVISIONED=1
 ril.subscription.types=NV,RUIM
