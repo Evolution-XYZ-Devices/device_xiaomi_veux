@@ -852,4 +852,7 @@
         <item>org.lineageos.aperture.dev</item>
     </string-array>
 
+    <!-- Whether to Enable Smart Charging -->
+    <bool name="config_smartChargingAvailable">true</bool>
+
 </resources>
