@@ -86,4 +86,6 @@
          Leave 1 if you have mA, put 1000 if you have µA-->
     <integer name="config_battCurrentDivider" translatable="false">1000</integer>
 
+    <!-- Whether the combined qs shows in status bar -->
+    <bool name="flag_combined_qs_headers">false</bool>
 </resources>
