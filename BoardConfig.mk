@@ -238,3 +238,4 @@ WPA_SUPPLICANT_VERSION := VER_0_8_X
 
 # Inherit from the proprietary version
 include vendor/xiaomi/veux/BoardConfigVendor.mk
+include vendor/xiaomi/veux-firmware/BoardConfigVendor.mk
