@@ -198,6 +198,7 @@ vendor.display.svi.config_path=/vendor/etc/SVIConfig.xml
 ro.vendor.display.sensortype=2
 persist.sys.sf.color_mode=9
 persist.sys.sf.native_mode=2
+debug.sf.enable_egl_image_tracker=1
 
 # DPM
 persist.vendor.dpm.feature=1
