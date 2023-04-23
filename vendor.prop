@@ -201,6 +201,7 @@ ro.vendor.display.sensortype=2
 persist.sys.sf.color_mode=9
 persist.sys.sf.native_mode=2
 debug.sf.enable_egl_image_tracker=1
+vendor.display.disable_metadata_dynamic_fps=1
 
 # DPM
 persist.vendor.dpm.feature=1
