@@ -8,7 +8,7 @@ git clone https://github.com/JaswalAshish/hardware_qcom-caf_sm8350_display.git h
 
 echo 'Cloning Vendor tree [2/4]'
 # Vendor Tree
-git clone https://github.com/JaswalAshish/vendor_xiaomi_veux.git vendor/xiaomi/veux
+git clone https://gitlab.com/JaswalAshish/vendor_xiaomi_veux.git vendor/xiaomi/veux
 
 echo 'Cloning Kernel tree [3/4]'
 # Kernel Tree
