@@ -1054,6 +1054,10 @@ vendor/lib64/vendor.qti.gnss@4.0.so
 system_ext/etc/permissions/com.android.hotwordenrollment.common.util.xml
 -system_ext/framework/com.android.hotwordenrollment.common.util.jar
 
+# Health
+vendor/lib/hw/android.hardware.health@2.0-impl-2.1-qti.so
+vendor/lib64/hw/android.hardware.health@2.0-impl-2.1-qti.so
+
 # IMS
 -system_ext/app/uceShimService/uceShimService.apk
 system_ext/lib64/lib-imsvideocodec.so
