@@ -462,7 +462,6 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     init.qcom.rc \
     init.qti.kernel.rc \
-    init.qti.ufs.rc \
     init.xiaomi.rc \
     init.target.rc \
     init.batterysecret.rc \
