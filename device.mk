@@ -494,12 +494,6 @@ PRODUCT_PACKAGES += \
     android.hardware.sensors@2.1-service.xiaomi_holi-multihal \
     libsensorndkbridge
 
-# Service Tracker
-PRODUCT_PACKAGES += \
-    vendor.qti.hardware.servicetracker@1.0.vendor \
-    vendor.qti.hardware.servicetracker@1.1.vendor \
-    vendor.qti.hardware.servicetracker@1.2.vendor
-
 # Shipping API Level
 PRODUCT_SHIPPING_API_LEVEL := 30
 
