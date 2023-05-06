@@ -309,14 +309,6 @@
         </interface>
     </hal>
     <hal format="hidl" optional="true">
-        <name>vendor.qti.hardware.audiohalext</name>
-        <version>1.0</version>
-        <interface>
-            <name>IAudioHalExt</name>
-            <instance>default</instance>
-        </interface>
-    </hal>
-    <hal format="hidl" optional="true">
         <name>vendor.qti.hardware.bluetooth_audio</name>
         <version>2.0-1</version>
         <interface>
@@ -462,30 +454,6 @@
         </interface>
     </hal>
     <hal format="hidl" optional="true">
-        <name>vendor.qti.hardware.eid</name>
-        <version>1.0</version>
-        <interface>
-            <name>IEid</name>
-            <instance>default</instance>
-        </interface>
-    </hal>
-    <hal format="hidl" optional="true">
-        <name>vendor.qti.hardware.embmssl</name>
-        <version>1.0-1</version>
-        <interface>
-            <name>IEmbms</name>
-            <instance>embmsslServer0</instance>
-        </interface>
-    </hal>
-    <hal format="hidl" optional="true">
-        <name>vendor.qti.hardware.factory</name>
-        <version>1.0-1</version>
-        <interface>
-            <name>IFactory</name>
-            <instance>default</instance>
-        </interface>
-    </hal>
-    <hal format="hidl" optional="true">
         <name>vendor.qti.hardware.fingerprint</name>
         <version>1.0</version>
         <interface>
@@ -498,14 +466,6 @@
         <version>1.0</version>
         <interface>
             <name>IFmHci</name>
-            <instance>default</instance>
-        </interface>
-    </hal>
-    <hal format="hidl" optional="true">
-        <name>vendor.qti.hardware.fstman</name>
-        <version>1.0</version>
-        <interface>
-            <name>IFstManager</name>
             <instance>default</instance>
         </interface>
     </hal>
@@ -582,14 +542,6 @@
         </interface>
     </hal>
     <hal format="hidl" optional="true">
-        <name>vendor.qti.hardware.qccvndhal</name>
-        <version>1.0</version>
-        <interface>
-            <name>IQccvndhal</name>
-            <instance>qccvndhal</instance>
-        </interface>
-    </hal>
-    <hal format="hidl" optional="true">
         <name>vendor.qti.hardware.qconfig</name>
         <version>1.0</version>
         <interface>
@@ -602,14 +554,6 @@
         <version>1.0</version>
         <interface>
             <name>IQdutilsDisp</name>
-            <instance>default</instance>
-        </interface>
-    </hal>
-    <hal format="hidl" optional="true">
-        <name>vendor.qti.hardware.qseecom</name>
-        <version>1.0</version>
-        <interface>
-            <name>IQSEECom</name>
             <instance>default</instance>
         </interface>
     </hal>
@@ -788,22 +732,6 @@
         </interface>
     </hal>
     <hal format="hidl" optional="true">
-        <name>vendor.qti.hardware.secureprocessor.device</name>
-        <version>1.0</version>
-        <interface>
-            <name>ISecureProcessor</name>
-            <instance>qti-tee</instance>
-        </interface>
-    </hal>
-    <hal format="hidl" optional="true">
-        <name>vendor.qti.hardware.sensorscalibrate</name>
-        <version>1.0</version>
-        <interface>
-            <name>ISensorsCalibrate</name>
-            <instance>default</instance>
-        </interface>
-    </hal>
-    <hal format="hidl" optional="true">
         <name>vendor.qti.hardware.slmadapter</name>
         <version>1.0</version>
         <interface>
@@ -825,26 +753,6 @@
         <interface>
             <name>ISxrCrypto</name>
             <instance>sxrhalservice</instance>
-        </interface>
-    </hal>
-    <hal format="hidl" optional="true">
-        <name>vendor.qti.hardware.systemhelper</name>
-        <version>1.0</version>
-        <interface>
-            <name>ISystemEvent</name>
-            <instance>default</instance>
-        </interface>
-        <interface>
-            <name>ISystemResource</name>
-            <instance>default</instance>
-        </interface>
-    </hal>
-    <hal format="hidl" optional="true">
-        <name>vendor.qti.hardware.tui_comm</name>
-        <version>1.0</version>
-        <interface>
-            <name>ITuiComm</name>
-            <instance>default</instance>
         </interface>
     </hal>
     <hal format="hidl" optional="true">
@@ -882,34 +790,10 @@
         </interface>
     </hal>
     <hal format="hidl" optional="true">
-        <name>vendor.qti.hardware.wifi.wifilearner</name>
-        <version>1.0</version>
-        <interface>
-            <name>IWifiStats</name>
-            <instance>wifiStats</instance>
-        </interface>
-    </hal>
-    <hal format="hidl" optional="true">
         <name>vendor.qti.hardware.wifi.wifimyftm</name>
         <version>1.0</version>
         <interface>
             <name>IWifiMyFtm</name>
-            <instance>default</instance>
-        </interface>
-    </hal>
-    <hal format="hidl" optional="true">
-        <name>vendor.qti.hardware.wigig.netperftuner</name>
-        <version>1.0</version>
-        <interface>
-            <name>INetPerfTuner</name>
-            <instance>default</instance>
-        </interface>
-    </hal>
-    <hal format="hidl" optional="true">
-        <name>vendor.qti.hardware.wigig.supptunnel</name>
-        <version>1.0</version>
-        <interface>
-            <name>ISuppTunnelProvider</name>
             <instance>default</instance>
         </interface>
     </hal>
@@ -946,42 +830,10 @@
         </interface>
     </hal>
     <hal format="hidl" optional="true">
-        <name>vendor.qti.memory.pasrmanager</name>
-        <version>1.0-1</version>
-        <interface>
-            <name>IPasrManager</name>
-            <instance>pasrhal</instance>
-        </interface>
-    </hal>
-    <hal format="hidl" optional="true">
-        <name>vendor.qti.power.pasrmanager</name>
-        <version>1.0</version>
-        <interface>
-            <name>IPasrManager</name>
-            <instance>default</instance>
-        </interface>
-    </hal>
-    <hal format="hidl" optional="true">
         <name>vendor.qti.qesdhal</name>
         <version>1.0-1</version>
         <interface>
             <name>IQesdhal</name>
-            <instance>default</instance>
-        </interface>
-    </hal>
-    <hal format="hidl" optional="true">
-        <name>vendor.qti.qspmhal</name>
-        <version>1.0</version>
-        <interface>
-            <name>IQspmhal</name>
-            <instance>default</instance>
-        </interface>
-    </hal>
-    <hal format="hidl" optional="true">
-        <name>vendor.qti.spu</name>
-        <version>1.0-1</version>
-        <interface>
-            <name>ISPUManager</name>
             <instance>default</instance>
         </interface>
     </hal>
@@ -1011,7 +863,7 @@
     </hal>
     <hal format="hidl" optional="true">
         <name>vendor.xiaomi.hardware.mlipay</name>
-        <version>1.0-1</version>
+        <version>1.1</version>
         <interface>
             <name>IMlipayService</name>
             <instance>default</instance>
