@@ -355,8 +355,6 @@ on post-fs-data
     # Create /data/time folder for time-services
     mkdir /data/vendor/time/ 0700 system system
 
-    setprop vold.post_fs_data_done 1
-
     #Create a folder for SRS to be able to create a usercfg file
     #mkdir /data/data/media 0770 media media
 
@@ -488,6 +486,10 @@ on property:persist.vendor.sys.rawdump_copy=1
 
 on property:persist.vendor.sys.rawdump_copy=0
     write /sys/kernel/dload/emmc_dload 0
+
+    # keep that at the end of on post-fs-data
+    # Set indication (checked by vold) that we have finished this action
+    setprop vold.post_fs_data_done 1
 
 on property:sys.boot_completed=1
     write /dev/kmsg "Boot completed "
