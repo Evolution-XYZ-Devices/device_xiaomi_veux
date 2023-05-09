@@ -37,6 +37,9 @@ ro.netflix.bsp_rev=Q4350-32962-1
 # NFC
 ro.nfc.port=I2C
 
+# Perf
+vendor.perf.gestureflingboost.enable=true
+
 # QC framework value-adds
 ro.vendor.qti.va_aosp.support=1
 
