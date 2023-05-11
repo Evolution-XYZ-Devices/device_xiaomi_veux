@@ -287,6 +287,15 @@ PRODUCT_PACKAGES += \
     libstagefright_foundation \
     libstagefright_softomx.vendor
 
+# MIUICamera
+PRODUCT_PRODUCT_PROPERTIES += \
+    ro.com.google.lens.oem_camera_package=com.android.camera \
+    persist.vendor.camera.privapp.list=com.android.camera
+
+PRODUCT_SYSTEM_PROPERTIES += \
+    ro.miui.build.region=in \
+    ro.miui.notch=1
+
 # Mlipay
 PRODUCT_PACKAGES += \
     vendor.xiaomi.hardware.mlipay@1.1.vendor \
