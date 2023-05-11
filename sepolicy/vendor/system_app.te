@@ -5,3 +5,14 @@ allow system_app proc_pagetypeinfo:file r_file_perms;
 
 # allow system apps to read battery status
 r_dir_file(system_app, sysfs_battery_supply)
+
+allow system_app sysfs_zram:dir search;
+allow system_app sysfs_zram:file r_file_perms;
+
+# vendor_aware_prop
+get_prop(system_app, vendor_aware_available_prop);
+
+binder_call(system_app, hal_audio_default)
+binder_call(system_app, hal_vibrator_default)
+binder_call(system_app, hal_wifi_supplicant_default)
+binder_call(system_app, wificond)
