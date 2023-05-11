@@ -307,6 +307,9 @@ ro.telephony.default_network=33,33
 ro.vendor.radio.5g=3
 ro.vendor.use_data_netmgrd=true
 telephony.lteOnCdmaDevice=1
+ro.telephony.call_ring.multiple=false
+ro.vendor.ril.svdo=false
+ro.vendor.ril.svlte1x=false
 
 # Perf
 ro.vendor.extension_library=libqti-perfd-client.so
