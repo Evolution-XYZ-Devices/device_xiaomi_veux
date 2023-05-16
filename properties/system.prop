@@ -12,19 +12,6 @@ debug.sf.disable_backpressure=1
 debug.sf.enable_hwc_vds=1
 ro.sf.force_hwc_brightness=1
 
-# Hwui properties
-ro.hwui.texture_cache_size=72
-ro.hwui.layer_cache_size=48
-ro.hwui.r_buffer_cache_size=8
-ro.hwui.path_cache_size=32
-ro.hwui.gradient_cache_size=1
-ro.hwui.drop_shadow_cache_size=6
-ro.hwui.texture_cache_flushrate=0.4
-ro.hwui.text_small_cache_width=1024
-ro.hwui.text_small_cache_height=1024
-ro.hwui.text_large_cache_width=2048
-ro.hwui.text_large_cache_height=1024
-
 # IMS
 persist.dbg.volte_avail_ovr=1
 persist.dbg.vt_avail_ovr=1
@@ -51,9 +38,6 @@ ro.netflix.bsp_rev=Q4350-32962-1
 # NFC
 ro.nfc.port=I2C
 
-# Perf
-vendor.perf.gestureflingboost.enable=true
-
 # QC framework value-adds
 ro.vendor.qti.va_aosp.support=1
 
@@ -71,9 +55,6 @@ persist.sys.radio.force_lte_ca=true
 # Radio Video Calling
 persist.vendor.radio.vdp_on_ims_cap=1
 persist.vendor.qti.telephony.vt_cam_interface=2
-
-# Render
-debug.cpurend.vsync=false
 
 # Sensors
 persist.vendor.sensors.enable.mag_filter=true

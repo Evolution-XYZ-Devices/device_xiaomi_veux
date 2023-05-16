@@ -137,24 +137,33 @@ PRODUCT_PACKAGES += \
 PRODUCT_AAPT_CONFIG := normal
 PRODUCT_AAPT_PREF_CONFIG := xxhdpi
 
-# Dex
-PRODUCT_DEX_PREOPT_DEFAULT_COMPILER_FILTER := verify
-
-# DeviceSettings
-#PRODUCT_PACKAGES += \
-#    XiaomiParts
-
 # Disable SF configstore
 PRODUCT_PACKAGES += \
     disable_configstore
 
 # Display
 PRODUCT_PACKAGES += \
-    android.hardware.graphics.allocator@3.0.vendor \
     android.hardware.graphics.mapper@3.0-impl-qti-display \
-    android.hardware.graphics.mapper@4.0-impl-qti-display \
+    android.hardware.graphics.mapper@4.0-impl-qti-display
+
+PRODUCT_PACKAGES += \
     android.hardware.memtrack@1.0-impl \
     android.hardware.memtrack@1.0-service \
+    memtrack.default
+
+PRODUCT_PACKAGES += \
+    libdisplayconfig.qti \
+    libdisplayconfig.system.qti \
+    libqdMetaData \
+    libqdMetaData.system \
+    libsdmcore \
+    libsdmutils \
+    libtinyxml \
+    libvulkan \
+    vendor.display.config@1.15 \
+    vendor.display.config@1.15.vendor \
+    vendor.display.config@2.0 \
+    vendor.display.config@2.0.vendor \
     vendor.qti.hardware.display.allocator-service \
     vendor.qti.hardware.display.composer-service \
     vendor.qti.hardware.display.mapper@1.0.vendor \
@@ -162,17 +171,6 @@ PRODUCT_PACKAGES += \
     vendor.qti.hardware.display.mapper@2.0.vendor \
     vendor.qti.hardware.display.mapper@3.0.vendor \
     vendor.qti.hardware.display.mapper@4.0.vendor
-
-PRODUCT_PACKAGES += \
-    vendor.display.config@1.15.vendor \
-    vendor.display.config@2.0.vendor
-
-PRODUCT_PACKAGES += \
-    libdisplayconfig.qti \
-    libqdMetaData \
-    libtinyxml \
-    memtrack.default \
-    vndservicemanager
 
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/configs/snapdragon_color_libs_config.xml:$(TARGET_COPY_OUT_VENDOR)/etc/snapdragon_color_libs_config.xml
@@ -194,9 +192,6 @@ PRODUCT_ALWAYS_PREOPT_EXTRACTED_APK := true
 PRODUCT_PACKAGES += \
     android.hardware.drm-service.clearkey \
     android.hardware.drm@1.4.vendor
-
-PRODUCT_PACKAGES += \
-    libdrm
 
 # Fastbootd
 PRODUCT_PACKAGES += \
@@ -275,21 +270,15 @@ PRODUCT_PACKAGES += \
 
 # Media
 PRODUCT_PACKAGES += \
+    android.hardware.media.omx@1.0-service \
+    vendor.qti.media.c2@1.0-service
+
+PRODUCT_PACKAGES += \
     libavservices_minijail \
     libavservices_minijail.vendor \
-    libavservices_minijail_vendor \
+    libcodec2_hidl@1.0.vendor \
     libcodec2_hidl@1.1.vendor \
-    libmm-omxcore \
-    libOmxAacEnc \
-    libOmxAmrEnc \
-    libOmxCore \
-    libOmxEvrcEnc \
-    libOmxG711Enc \
-    libOmxQcelp13Enc \
-    libstagefrighthw \
-    libstagefright_omx \
-    libstagefright_foundation \
-    libstagefright_softomx.vendor
+    libcodec2_vndk.vendor
 
 # MIUICamera
 PRODUCT_PRODUCT_PROPERTIES += \
@@ -325,6 +314,22 @@ PRODUCT_PACKAGES += \
     NfcNci \
     SecureElement \
     Tag
+
+# OMX
+PRODUCT_PACKAGES += \
+    libmm-omxcore \
+    libOmxAacEnc \
+    libOmxAmrEnc \
+    libOmxCore \
+    libOmxEvrcEnc \
+    libOmxG711Enc \
+    libOmxQcelp13Enc \
+    libOmxVdec \
+    libOmxVenc \
+    libstagefrighthw \
+    libstagefright_omx \
+    libstagefright_foundation \
+    libstagefright_softomx.vendor
 
 # Overlays
 PRODUCT_ENFORCE_RRO_TARGETS := *
@@ -471,8 +476,9 @@ PRODUCT_PACKAGES += \
     init.kernel.post_boot.sh \
     init.kernel.post_boot-blair.sh \
     init.kernel.post_boot-holi.sh \
+    init.qti.kernel.sh \
     init.qcom.sh \
-    init.qcom.post_boot.sh \
+    init.qcom.early_boot.sh \
     init.mi.btmac.sh \
     vendor_modprobe.sh
 
@@ -493,10 +499,6 @@ PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/rootdir/etc/fstab.emmc:$(TARGET_COPY_OUT_VENDOR_RAMDISK)/first_stage_ramdisk/fstab.emmc \
     $(LOCAL_PATH)/rootdir/etc/fstab.emmc:$(TARGET_COPY_OUT_RECOVERY)/root/first_stage_ramdisk/fstab.emmc \
     $(LOCAL_PATH)/rootdir/etc/init.recovery.qcom.rc:$(TARGET_COPY_OUT_RECOVERY)/root/init.recovery.qcom.rc
-
-# Refresh Rate
-PRODUCT_PROPERTY_OVERRIDES += \
-    ro.surface_flinger.use_content_detection_for_refresh_rate=false
 
 # Sensors
 PRODUCT_PACKAGES += \
@@ -550,6 +552,10 @@ PRODUCT_PACKAGES += \
 
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/vibrator/excluded-input-devices.xml:$(TARGET_COPY_OUT_VENDOR)/etc/excluded-input-devices.xml
+
+# Vendor service manager
+PRODUCT_PACKAGES += \
+    vndservicemanager
 
 # Wi-Fi
 PRODUCT_PACKAGES += \

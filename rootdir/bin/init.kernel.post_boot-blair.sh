@@ -101,7 +101,7 @@ function configure_memory_parameters() {
 	# Set Memory parameters.
 
 	# Set swappiness to 100 for all targets
-	echo 30 > /proc/sys/vm/swappiness
+	echo 100 > /proc/sys/vm/swappiness
 
 	# Disable wsf for all targets beacause we are using efk.
 	# wsf Range : 1..1000 So set to bare minimum value 1.
@@ -178,6 +178,9 @@ echo 35 > /proc/sys/kernel/sched_min_task_util_for_colocation
 echo -6 > /sys/devices/system/cpu/cpu6/sched_load_boost
 echo -6 > /sys/devices/system/cpu/cpu7/sched_load_boost
 echo 85 > /sys/devices/system/cpu/cpufreq/policy6/schedutil/hispeed_load
+
+# setup runtime schedTune
+echo 10 > /dev/stune/top-app/schedtune.boost
 
 # configure input boost settings
 echo "0:1804800" > /sys/devices/system/cpu/cpu_boost/input_boost_freq

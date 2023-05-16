@@ -1,6 +1,6 @@
 #! /vendor/bin/sh
 
-# Copyright (c) 2009-2016, The Linux Foundation. All rights reserved.
+# Copyright (c) 2012-2013,2016,2018-2020 The Linux Foundation. All rights reserved.
 #
 # Redistribution and use in source and binary forms, with or without
 # modification, are permitted provided that the following conditions are met:
@@ -27,26 +27,38 @@
 # ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
 #
 
-#
-# Make modem config folder and copy firmware config to that folder for RIL
-#
-if [ -f /data/vendor/modem_config/ver_info.txt ]; then
-    prev_version_info=`cat /data/vendor/modem_config/ver_info.txt`
+export PATH=/vendor/bin
+
+echo "detect" > /sys/class/drm/card0-DSI-1/status
+#For drm based display driver
+vbfile=/sys/module/drm/parameters/vblankoffdelay
+if [ -w $vbfile ]; then
+    echo -1 >  $vbfile
 else
-    prev_version_info=""
+    log -t DRM_BOOT -p w "file: '$vbfile' or perms doesn't exist"
 fi
 
-cur_version_info=`cat /vendor/firmware_mnt/verinfo/ver_info.txt`
-if [ ! -f /vendor/firmware_mnt/verinfo/ver_info.txt -o "$prev_version_info" != "$cur_version_info" ]; then
-    # add W for group recursively before delete
-    chmod g+w -R /data/vendor/modem_config/*
-    rm -rf /data/vendor/modem_config/*
-    # preserve the read only mode for all subdir and files
-    cp --preserve=m -dr /vendor/firmware_mnt/image/modem_pr/mcfg/configs/* /data/vendor/modem_config
-    cp --preserve=m -d /vendor/firmware_mnt/verinfo/ver_info.txt /data/vendor/modem_config/
-    cp --preserve=m -d /vendor/firmware_mnt/image/modem_pr/mbn_ota.txt /data/vendor/modem_config/
-    # the group must be root, otherwise this script could not add "W" for group recursively
-    chown -hR radio.root /data/vendor/modem_config/*
+function set_perms() {
+    #Usage set_perms <filename> <ownership> <permission>
+    chown -h $2 $1
+    chmod $3 $1
+}
+
+set_perms /sys/devices/virtual/hdcp/msm_hdcp/min_level_change system.graphics 0660
+# allow system_graphics group to access pmic secure_mode node
+set_perms /sys/class/lcd_bias/secure_mode system.graphics 0660
+set_perms /sys/class/leds/wled/secure_mode system.graphics 0660
+
+boot_reason=`cat /proc/sys/kernel/boot_reason`
+reboot_reason=`getprop ro.boot.alarmboot`
+if [ "$boot_reason" = "3" ] || [ "$reboot_reason" = "true" ]; then
+    setprop ro.vendor.alarm_boot true
+else
+    setprop ro.vendor.alarm_boot false
 fi
-chmod g-w /data/vendor/modem_config
-setprop ro.vendor.ril.mbn_copy_completed 1
+
+# copy GPU frequencies to vendor property
+if [ -f /sys/class/kgsl/kgsl-3d0/gpu_available_frequencies ]; then
+    gpu_freq=`cat /sys/class/kgsl/kgsl-3d0/gpu_available_frequencies` 2> /dev/null
+    setprop vendor.gpu.available_frequencies "$gpu_freq"
+fi

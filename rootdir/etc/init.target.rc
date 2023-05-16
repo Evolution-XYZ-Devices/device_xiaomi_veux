@@ -26,8 +26,6 @@
 # IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
 #
 #
-import /vendor/etc/init/init.mishow.ctl.rc
-import /vendor/etc/init/init.charge_logger.rc
 import /vendor/etc/init/hw/init.qti.kernel.rc
 
 on early-init
@@ -235,15 +233,6 @@ service vendor.per_proxy /vendor/bin/pm-proxy
     user system
     group system
     disabled
-
-#service vendor.mdm_helper /vendor/bin/mdm_helper
-#    class core
-#    group system wakelock
-#    disabled
-
-service vendor.mdm_launcher /vendor/bin/sh /vendor/bin/init.mdm.sh
-    class core
-    oneshot
 
 on property:init.svc.vendor.per_mgr=running
     start vendor.per_proxy
