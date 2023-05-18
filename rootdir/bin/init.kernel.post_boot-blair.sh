@@ -179,7 +179,7 @@ echo 10 > /dev/stune/top-app/schedtune.boost
 
 # configure input boost settings
 echo "0:1804800" > /sys/devices/system/cpu/cpu_boost/input_boost_freq
-echo 120 > /sys/devices/system/cpu/cpu_boost/input_boost_ms
+echo 150 > /sys/devices/system/cpu/cpu_boost/input_boost_ms
 
 # Enable bus-dcvs
 for device in /sys/devices/platform/soc
