@@ -561,7 +561,9 @@ PRODUCT_COPY_FILES += \
 
 # Vendor service manager
 PRODUCT_PACKAGES += \
-    vndservicemanager
+    vndservicemanager \
+    libvndksupport \
+    libvndksupport.vendor
 
 # Wi-Fi
 PRODUCT_PACKAGES += \
