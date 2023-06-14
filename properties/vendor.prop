@@ -243,6 +243,7 @@ debug.sf.early.app.duration=12333333
 debug.sf.earlyGl.sf.duration=11666666
 debug.sf.earlyGl.app.duration=12333333
 debug.sf.treat_170m_as_sRGB=1
+debug.sf.predict_hwc_composition_strategy=0
 ro.surface_flinger.has_HDR_display=true
 ro.surface_flinger.has_wide_color_display=true
 ro.surface_flinger.max_virtual_display_dimension=4096
