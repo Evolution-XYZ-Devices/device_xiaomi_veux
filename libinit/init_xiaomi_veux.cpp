@@ -19,7 +19,7 @@ static const variant_info_t veux_global_info = {
     .marketname = "Redmi Note 11 Pro 5G",
     .model = "2201116SG",
     .name = "veux_global",
-    .build_fingerprint = "Redmi/veux_global/veux:12/SKQ1.211006.001/V13.0.7.0.SKCMIXM:user/release-keys",
+    .build_fingerprint = "Redmi/veux_global/veux:12/SKQ1.211006.001/V13.0.9.0.SKCMIXM:user/release-keys",
 
     .nfc = true,
 };
@@ -34,7 +34,7 @@ static const variant_info_t veux_in_info = {
     .marketname = "Redmi Note 11 Pro 5G",
     .model = "2201116SG",
     .name = "veux_in",
-    .build_fingerprint = "Redmi/veux_in/veux:12/SKQ1.211006.001/V13.0.6.0.SKCINXM:user/release-keys",
+    .build_fingerprint = "Redmi/veux_in/veux:12/SKQ1.211006.001/V13.0.7.0.SKCINXM:user/release-keys",
 };
 
 static const variant_info_t veux_info = {
@@ -47,7 +47,7 @@ static const variant_info_t veux_info = {
     .marketname = "Redmi Note 11E Pro",
     .model = "2201116SC",
     .name = "veux",
-    .build_fingerprint = "Redmi/veux/veux:12/SKQ1.211006.001/V13.0.4.0.SKCCNXM:user/release-keys",
+    .build_fingerprint = "Redmi/veux/veux:12/TKQ1.221114.001/V14.0.1.0.TKCCNXM:user/release-keys",
 
     .nfc = true,
 };
@@ -62,7 +62,7 @@ static const variant_info_t peux_in_info = {
     .marketname = "Redmi Note 11 Pro+ 5G",
     .model = "2201116SI",
     .name = "peux_in",
-    .build_fingerprint = "Redmi/peux_in/peux:12/SKQ1.211006.001/V13.0.6.0.SKCINXM:user/release-keys",
+    .build_fingerprint = "Redmi/peux_in/peux:12/SKQ1.211006.001/V13.0.7.0.SKCINXM:user/release-keys",
 };
 
 static const variant_info_t veux_jp_info = {
@@ -75,7 +75,7 @@ static const variant_info_t veux_jp_info = {
     .marketname = "Redmi Note 11 Pro 5G",
     .model = "2201116SR",
     .name = "veux_jp",
-    .build_fingerprint = "Redmi/veux_jp/veux:11/SKQ1.211006.001/V13.0.2.0.SKCJPXM:user/release-keys",
+    .build_fingerprint = "Redmi/veux_jp/veux:11/SKQ1.211006.001/V13.0.3.0.SKCJPXM:user/release-keys",
 
     .nfc = true,
 };
@@ -90,7 +90,7 @@ static const variant_info_t veux_p_global_info = {
     .marketname = "POCO X4 Pro 5G",
     .model = "2201116PG",
     .name = "veux_p_global",
-    .build_fingerprint = "POCO/veux_p_global/veux:12/SKQ1.211006.001/V13.0.7.0.SKCMIXM:user/release-keys",
+    .build_fingerprint = "POCO/veux_p_global/veux:12/SKQ1.211006.001/V13.0.9.0.SKCMIXM:user/release-keys",
 
     .nfc = true,
 };
@@ -105,7 +105,7 @@ static const variant_info_t veux_p_in_info = {
     .marketname = "POCO X4 Pro 5G",
     .model = "2201116PG",
     .name = "veux_p_in",
-    .build_fingerprint = "POCO/veux_p_in/veux:12/SKQ1.211006.001/V13.0.6.0.SKCINXM:user/release-keys",
+    .build_fingerprint = "POCO/veux_p_in/veux:12/SKQ1.211006.001/V13.0.7.0.SKCINXM:user/release-keys",
 };
 
 static const variant_info_t peux_p_in_info = {
@@ -118,7 +118,7 @@ static const variant_info_t peux_p_in_info = {
     .marketname = "POCO X4 Pro 5G",
     .model = "2201116PI",
     .name = "peux_p_in",
-    .build_fingerprint = "POCO/peux_p_in/peux:12/SKQ1.211006.001/V13.0.6.0.SKCINXM:user/release-keys",
+    .build_fingerprint = "POCO/peux_p_in/peux:12/SKQ1.211006.001/V13.0.7.0.SKCINXM:user/release-keys",
 };
 
 static const std::vector<variant_info_t> variants = {
