@@ -149,8 +149,6 @@ vendor/etc/mixer_paths_usbc.xml
 vendor/etc/r_submix_audio_policy_configuration.xml
 vendor/etc/sound_trigger_mixer_paths.xml
 vendor/etc/sound_trigger_platform_info.xml
-vendor/etc/spk_cal_pinknoise.wav
-vendor/etc/spk_cal_silence.wav
 vendor/etc/usb_audio_policy_configuration.xml
 
 # Audio FX modules
@@ -222,6 +220,7 @@ vendor/lib64/hw/vendor.qti.hardware.btconfigstore@2.0-impl.so
 vendor/lib64/libbt-hidlclient.so
 vendor/lib64/libbtnv.so
 vendor/lib64/libsoc_helper.so
+vendor/lib64/libsoc_helper_jni.so
 vendor/lib64/vendor.qti.hardware.bluetooth_sar@1.0.so
 vendor/lib64/vendor.qti.hardware.bluetooth_sar@1.1.so
 
@@ -524,18 +523,6 @@ vendor/etc/camera/model/pre_model/ldc_pre_policy
 vendor/etc/camera/model/rt_model/preview_cache
 vendor/etc/camera/model/rt_model/preview_model
 vendor/etc/camera/model/rt_model/preview_policy
-vendor/etc/camera/104_Meet.png
-vendor/etc/camera/108_NorthernEurope.png
-vendor/etc/camera/109_Rome.png
-vendor/etc/camera/110_BlackGold.png
-vendor/etc/camera/121_BBP.png
-vendor/etc/camera/122_Mysterious.png
-vendor/etc/camera/123_GreenOrange.png
-vendor/etc/camera/124_SummerDay.png
-vendor/etc/camera/125_Latin.png
-vendor/etc/camera/126_Fantasy.png
-vendor/etc/camera/127_DustDream.png
-vendor/etc/camera/128_MongKok.png
 vendor/etc/camera/com.xiaomi.dcal.wu.golden_i
 vendor/etc/camera/com.xiaomi.dcal.wu.golden_ii
 vendor/etc/camera/com.xiaomi.dcal.wu.golden_in_i
