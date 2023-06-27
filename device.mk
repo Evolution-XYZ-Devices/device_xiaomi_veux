@@ -317,8 +317,6 @@ PRODUCT_PACKAGES += \
     vendor.nxp.nxpese@1.0 \
     vendor.nxp.nxpnfclegacy@1.0 \
     vendor.nxp.nxpnfclegacy@1.0.vendor \
-    NfcNci \
-    SecureElement \
     Tag
 
 # OMX
