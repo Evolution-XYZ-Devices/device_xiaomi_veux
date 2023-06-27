@@ -107,7 +107,7 @@ function configure_memory_parameters() {
 	configure_read_ahead_kb_values
 
 	#Spawn 2 kswapd threads which can help in fast reclaiming of pages
-	echo 2 > /proc/sys/vm/kswapd_threads
+	echo 1 > /proc/sys/vm/kswapd_threads
 }
 
 # Core control parameters for silver

@@ -278,13 +278,6 @@ service vendor.btmac-sh /vendor/bin/init.mi.btmac.sh
 on property:ro.vendor.display.svi=1 && property:sys.boot_completed=1
     start svi_on
 	
-service checknv /system/bin/checknv
-    class main
-    user root
-    group root system
-    oneshot
-    seclabel u:r:checknv:s0
-
 # Sync attribute value between system and vendor
 on property:persist.sys.mcc.mnc=*
     setprop persist.vendor.mcc.mnc ${persist.sys.mcc.mnc}

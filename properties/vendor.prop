@@ -62,6 +62,7 @@ ro.vendor.audio.surround.support=true
 ro.vendor.audio.us.proximity=true
 ro.vendor.audio.vocal.support=true
 ro.vendor.audio.voice.change.support=true
+ro.vendor.audio.voice.change.version=2
 ro.vendor.audio.voice.change.youme.support=true
 ro.vendor.audio.voice.volume.boost=manual
 vendor.audio.adm.buffering.ms=2
@@ -359,6 +360,7 @@ persist.vendor.qti.telephony.vt_cam_interface=2
 ro.hw_timeout_multiplier=3
 
 # Wifi
+ro.hardware.wlan.dbs=0
 wifi.aware.interface=wifi-aware0
 
 # Dolby
