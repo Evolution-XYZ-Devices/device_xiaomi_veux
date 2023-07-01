@@ -1275,12 +1275,15 @@ vendor/firmware/vpu20_4v_unsigned.mbn
 
 # MIUICamera
 -system/priv-app/MiuiCamera/MiuiCamera.apk
-system/lib64/libmegvii_bokeh_jni.so
-system/lib64/libcamera_mianode_jni.xiaomi.so
-system/lib64/libcamera_algoup_jni.xiaomi.so
 system/etc/sysconfig/miuicamera-hiddenapi-package-allowlist.xml
 system/etc/permissions/privapp-permissions-miuicamera.xml
 system/etc/public.libraries-xiaomi.txt
+system/lib64/libcamera_mianode_jni.xiaomi.so
+system/lib64/libcamera_algoup_jni.xiaomi.so
+system/lib64/libgui-xiaomi.so
+system/lib64/libmicampostproc_client.so
+system/lib64/vendor.xiaomi.hardware.campostproc@1.0.so
+vendor/etc/camera/camera_cnf.txt
 
 # Mlipay
 vendor/bin/mlipayd@1.1
