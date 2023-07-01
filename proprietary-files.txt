@@ -1,4 +1,4 @@
-# All unpinned blobs below are extracted from veux_global-user 12 SKQ1.211006.001 V13.0.9.0.SKCMIXM release-keys
+# All unpinned blobs below are extracted from veux_eea-user 13 TKQ1.221114.001 V14.0.1.0.TKCEUXM release-keys
 
 # ACDB
 vendor/etc/acdbdata/MTP/holi-mtpsku1-snd-card/MTP_SKU1_Bluetooth_cal.acdb
@@ -1486,6 +1486,7 @@ system_ext/lib64/vendor.qti.hardware.radio.internal.deviceinfo@1.0.so
 system_ext/lib64/vendor.qti.hardware.radio.lpa@1.0.so
 system_ext/lib64/vendor.qti.hardware.radio.lpa@1.1.so
 system_ext/lib64/vendor.qti.hardware.radio.lpa@1.2.so
+system_ext/lib64/vendor.qti.hardware.radio.lpa@1.3.so
 system_ext/lib64/vendor.qti.hardware.radio.qcrilhook@1.0.so
 system_ext/lib64/vendor.qti.hardware.radio.qtiradio@1.0.so
 system_ext/lib64/vendor.qti.hardware.radio.qtiradio@2.0.so
@@ -1495,6 +1496,7 @@ system_ext/lib64/vendor.qti.hardware.radio.qtiradio@2.3.so
 system_ext/lib64/vendor.qti.hardware.radio.qtiradio@2.4.so
 system_ext/lib64/vendor.qti.hardware.radio.qtiradio@2.5.so
 system_ext/lib64/vendor.qti.hardware.radio.qtiradio@2.6.so
+system_ext/lib64/vendor.qti.hardware.radio.qtiradio@2.7.so
 system_ext/lib64/vendor.qti.hardware.radio.uim@1.0.so
 system_ext/lib64/vendor.qti.hardware.radio.uim@1.1.so
 system_ext/lib64/vendor.qti.hardware.radio.uim@1.2.so
@@ -1535,6 +1537,8 @@ vendor/etc/qcril_database/upgrade/config/13.0_config.sql
 vendor/etc/qcril_database/upgrade/config/14.0_config.sql
 vendor/etc/qcril_database/upgrade/config/15.0_config.sql
 vendor/etc/qcril_database/upgrade/config/16.0_config.sql
+vendor/etc/qcril_database/upgrade/config/17.0_config.sql
+vendor/etc/qcril_database/upgrade/config/18.0_config.sql
 vendor/etc/qcril_database/upgrade/config/6.0_config.sql
 vendor/etc/qcril_database/upgrade/config/7.0_config.sql
 vendor/etc/qcril_database/upgrade/config/8.0_config.sql
@@ -1665,6 +1669,7 @@ vendor/lib64/libssc_default_listener.so
 vendor/lib64/libssccalapi.so
 vendor/lib64/sensors.elliptic.so
 vendor/lib64/sensors.ssc.so
+vendor/lib64/sensors.touch.detect.so
 
 # Sensors (citsensor)
 vendor/bin/hw/vendor.xiaomi.hardware.citsensorservice@1.1-service
