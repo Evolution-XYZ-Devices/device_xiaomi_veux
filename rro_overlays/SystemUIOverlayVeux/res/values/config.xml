@@ -36,7 +36,7 @@
     <bool name="config_vibrateOnIconAnimation">true</bool>
 
     <!-- If not zero, limits the internal screen recorder's framerate to the set value. -->
-    <integer name="config_screenRecorderMaxFramerate">60</integer>
+    <integer name="config_screenRecorderMaxFramerate">90</integer>
 
     <!-- A path similar to frameworks/base/core/res/res/values/config.xml
          config_mainBuiltInDisplayCutout that describes a path larger than the exact path of a display
