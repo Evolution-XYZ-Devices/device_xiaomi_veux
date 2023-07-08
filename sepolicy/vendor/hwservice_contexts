@@ -28,3 +28,6 @@ vendor.qti.hardware.radio.ims.IImsRadio/imsradio0               u:object_r:hal_t
 vendor.qti.hardware.radio.ims.IImsRadio/imsradio1               u:object_r:hal_telephony_hwservice:s0
 ro.vendor.ril.svlte1x                                           u:object_r:vendor_radio_prop:s0
 ro.vendor.ril.svdo                                              u:object_r:vendor_radio_prop:s0
+
+# Sensors
+vendor.xiaomi.hardware.citsensorservice::ICitSensorService      u:object_r:vendor_hal_citsensorservice_xiaomi_hwservice:s0
