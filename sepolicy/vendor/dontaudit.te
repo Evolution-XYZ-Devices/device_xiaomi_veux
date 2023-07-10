@@ -6,3 +6,18 @@ dontaudit {
 # Apps are no longer allowed open access to /dev/ashmem, unless they
 # target API level < Q.
 dontaudit untrusted_app ashmem_device:chr_file open;
+
+# why untrusted_app need these perms
+dontaudit untrusted_app_all {
+  sysfs_msm_subsys
+  rootfs
+}:dir {search read};
+dontaudit untrusted_app_all {
+  proc
+  proc_modules
+  proc_net
+  proc_net_tcp_udp
+  proc_tty_drivers
+  qemu_sf_lcd_density_prop
+  serialno_prop
+}:file read;
