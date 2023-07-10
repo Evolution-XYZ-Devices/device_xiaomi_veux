@@ -482,6 +482,7 @@ PRODUCT_PACKAGES += \
 
 # Ramdisk
 PRODUCT_PACKAGES += \
+    fstab.zram \
     init.class_main.sh \
     init.kernel.post_boot.sh \
     init.kernel.post_boot-blair.sh \
