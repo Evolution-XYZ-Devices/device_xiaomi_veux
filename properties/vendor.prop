@@ -343,6 +343,9 @@ MultitouchMinDistance=1px
 TapInterval=1ms
 TapSlop=1px
 
+# Telephony
+telephony.active_modems.max_count=2
+
 # Thermal
 vendor.sys.thermal.data.path=/data/vendor/thermal/
 
