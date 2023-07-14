@@ -11,10 +11,9 @@
      limitations under the License.
 -->
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    android:allowBackup="false"
     package="com.android.providers.settings.overlay.S88006AA1">
 
-    <application android:hasCode="false" />
+    <application android:hasCode="false" android:allowBackup="false"/>
     <overlay android:targetPackage="com.android.providers.settings"
         android:requiredSystemPropertyName="ro.boot.board_id"
         android:requiredSystemPropertyValue="S88006AA1"

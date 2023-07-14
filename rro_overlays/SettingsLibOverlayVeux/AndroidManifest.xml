@@ -12,7 +12,8 @@
 -->
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.ssos.settingslib.overlay.veux">
-    <application android:hasCode="false" />
+
+    <application android:hasCode="false" android:allowBackup="false"/>
     <overlay
       android:targetPackage="com.android.settingslib"
       android:isStatic="true"

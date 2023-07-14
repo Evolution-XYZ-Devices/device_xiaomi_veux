@@ -11,10 +11,9 @@
      limitations under the License.
 -->
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    android:allowBackup="false"
     package="com.android.frameworksres.overlay.veux">
 
-    <application android:hasCode="false" />
+    <application android:hasCode="false" android:allowBackup="false"/>
     <overlay
       android:targetPackage="android"
       android:isStatic="true"
