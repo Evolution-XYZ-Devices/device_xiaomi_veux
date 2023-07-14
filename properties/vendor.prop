@@ -169,6 +169,7 @@ persist.bluetooth.a2dp_offload.disabled=false
 persist.bluetooth.sbc_hd_higher_bitrate=1
 persist.vendor.bt.a2dp_offload_cap=sbc-aptx-aptxhd-aac
 persist.vendor.qcom.bluetooth.a2dp_offload_cap=sbc-aptx-aptxhd-aac
+persist.vendor.qcom.bluetooth.scram.enabled=true
 ro.bluetooth.a2dp_offload.supported=true
 
 # Camera
