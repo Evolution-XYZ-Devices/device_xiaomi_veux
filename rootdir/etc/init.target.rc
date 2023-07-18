@@ -32,6 +32,9 @@ on early-init
     exec u:r:vendor_modprobe:s0 -- /vendor/bin/vendor_modprobe.sh
     wait /sys/devices/soc0/soc_id
 
+    mkdir /dev/stune
+    mount cgroup none /dev/stune nodev noexec nosuid schedtune
+
 on init
     # Scheduler uclamp
     mkdir /dev/cpuctl/foreground
