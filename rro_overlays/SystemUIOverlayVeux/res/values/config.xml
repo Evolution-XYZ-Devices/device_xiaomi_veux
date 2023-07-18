@@ -93,8 +93,8 @@
     <bool name="config_disableStatusBarBurnInProtection">true</bool>
 
     <!-- Max visible notification icons -->
-    <integer name="config_maxVisibleNotificationIcons">5</integer>
-    <integer name="config_maxVisibleNotificationIconsWhenDark">5</integer>
+    <integer name="config_maxVisibleNotificationIcons">4</integer>
+    <integer name="config_maxVisibleNotificationIconsWhenDark">4</integer>
 
     <!-- Doze: whether the single tap sensor uses the proximity sensor.
      If both this parameter and doze_selectively_register_prox are true, registration for the
