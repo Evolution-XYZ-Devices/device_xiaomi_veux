@@ -16,6 +16,7 @@ debug.hwui.skia_atrace_enabled=false
 debug.sf.disable_backpressure=1
 debug.sf.enable_hwc_vds=1
 ro.sf.force_hwc_brightness=1
+persist.sys.brightness.low.gamma=true
 
 # IMS
 persist.dbg.volte_avail_ovr=1
