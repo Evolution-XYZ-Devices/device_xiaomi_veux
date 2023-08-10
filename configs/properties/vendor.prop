@@ -79,6 +79,7 @@ vendor.audio.feature.battery_listener.enable=true
 vendor.audio.feature.compr_cap.enable=false
 vendor.audio.feature.compress_in.enable=true
 vendor.audio.feature.compress_meta_data.enable=true
+vendor.audio.feature.compr_voip.enable=false
 vendor.audio.feature.concurrent_capture.enable=true
 vendor.audio.feature.custom_stereo.enable=true
 vendor.audio.feature.deepbuffer_as_primary.enable=false
@@ -229,9 +230,6 @@ persist.vendor.dpm.idletimer.mode=default
 persist.vendor.dpm.nsrm.bkg.evt=3955
 persist.vendor.dpmhalservice.enable=1
 
-# FS-verity
-ro.apk_verity.mode=2
-
 # Gatekeeper
 vendor.gatekeeper.disable_spu=true
 
@@ -241,6 +239,15 @@ debug.sf.enable_advanced_sf_phase_offset=1
 debug.sf.disable_client_composition_cache=1
 debug.sf.enable_transaction_tracing=false
 debug.sf.frame_rate_multiple_threshold=120
+debug.sf.use_phase_offsets_as_durations=1
+debug.sf.late.sf.duration=11666666
+debug.sf.late.app.duration=12333333
+debug.sf.early.sf.duration=11666666
+debug.sf.early.app.duration=12333333
+debug.sf.earlyGl.sf.duration=11666666
+debug.sf.earlyGl.app.duration=12333333
+debug.sf.enable_hwc_vds=0
+debug.sf.disable_backpressure=1
 debug.sf.treat_170m_as_sRGB=1
 debug.sf.predict_hwc_composition_strategy=0
 ro.surface_flinger.has_HDR_display=true
@@ -324,20 +331,6 @@ persist.vendor.sensors.sync_request=true
 # Storage
 ro.incremental.enable=yes
 
-# Touch Hax 
-touch.size.scale=1
-touch.size.bias=0
-touch.size.isSummed=0
-touch.pressure.scale=0.001
-touch.distance.calibration=none
-touch.distance.scale=0
-touch.coverage.calibration=box
-touch.gestureMode=spots
-MultitouchSettleInterval=1ms
-MultitouchMinDistance=1px
-TapInterval=1ms
-TapSlop=1px
-
 # Telephony
 telephony.active_modems.max_count=2
 
@@ -353,11 +346,6 @@ vendor.usb.rmnet.inst.name=rmnet
 vendor.usb.rndis.func.name=gsi
 vendor.usb.use_ffs_mtp=1
 vendor.usb.use_gadget_hal=0
-
-# Video Calling
-persist.vendor.radio.report_codec=1 
-persist.vendor.radio.vdp_on_ims_cap=1
-persist.vendor.qti.telephony.vt_cam_interface=2
 
 # Watchdog
 ro.hw_timeout_multiplier=3

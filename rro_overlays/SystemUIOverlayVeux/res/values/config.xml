@@ -36,7 +36,7 @@
     <bool name="config_vibrateOnIconAnimation">true</bool>
 
     <!-- If not zero, limits the internal screen recorder's framerate to the set value. -->
-    <integer name="config_screenRecorderMaxFramerate">90</integer>
+    <integer name="config_screenRecorderMaxFramerate">60</integer>
 
     <!-- A path similar to frameworks/base/core/res/res/values/config.xml
          config_mainBuiltInDisplayCutout that describes a path larger than the exact path of a display
@@ -89,22 +89,7 @@
     <!-- Whether the combined qs shows in status bar -->
     <bool name="flag_combined_qs_headers">false</bool>
 
-    <!-- StatusBar burn-in protection -->
-    <bool name="config_disableStatusBarBurnInProtection">true</bool>
-
     <!-- Max visible notification icons -->
-    <integer name="config_maxVisibleNotificationIcons">4</integer>
-    <integer name="config_maxVisibleNotificationIconsWhenDark">4</integer>
-
-    <!-- Doze: whether the single tap sensor uses the proximity sensor.
-     If both this parameter and doze_selectively_register_prox are true, registration for the
-     sensor will be delayed when the device first enters dozing but the device has not entered its
-     low powered state yet. -->
-    <bool name="doze_single_tap_uses_prox">false</bool>
-
-    <!-- Doze: whether the long press sensor uses the proximity sensor.
-     If both this parameter and doze_selectively_register_prox are true, registration for the
-     sensor will be delayed when the device first enters dozing but the device has not entered its
-     low powered state yet. -->
-    <bool name="doze_long_press_uses_prox">false</bool>
+    <integer name="config_maxVisibleNotificationIcons">5</integer>
+    <integer name="config_maxVisibleNotificationIconsWhenDark">5</integer>
 </resources>

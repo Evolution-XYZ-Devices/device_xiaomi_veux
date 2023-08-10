@@ -730,9 +730,6 @@
     <!-- Is the device capable of hot swapping an ICC Card -->
     <bool name="config_hotswapCapable">true</bool>
 
-     <!--Useful if you want to improve signal reception -->
-     <bool name="config_ignoreRssnrSignalLevel">true</bool>
-
     <!-- Whether the Unprocessed audio source supports the required frequency range and level -->
     <bool name="config_supportAudioSourceUnprocessed">true</bool>
 
@@ -872,7 +869,6 @@
     <!-- Default color temperature, in Kelvin, to tint the screen when Night display is
          activated. -->
     <integer name="config_nightDisplayColorTemperatureDefault">2850</integer>
-    <integer name="config_nightDisplayColorTemperatureMin">2596</integer>
 
     <!-- Defines the actions shown in advanced reboot submenu -->
     <string-array name="config_restartActionsList">
