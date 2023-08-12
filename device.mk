@@ -147,7 +147,8 @@ PRODUCT_DEX_PREOPT_DEFAULT_COMPILER_FILTER := everything
 # Display
 PRODUCT_PACKAGES += \
     android.hardware.graphics.mapper@3.0-impl-qti-display \
-    android.hardware.graphics.mapper@4.0-impl-qti-display
+    android.hardware.graphics.mapper@4.0-impl-qti-display \
+    android.hardware.light-service.xiaomi
 
 PRODUCT_PACKAGES += \
     android.hardware.memtrack@1.0-impl \
@@ -261,6 +262,10 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     android.hardware.keymaster@4.1.vendor \
     android.system.keystore2
+
+# Light
+PRODUCT_PACKAGES += \
+    android.hardware.light-service.xiaomi
 
 # Media
 PRODUCT_PACKAGES += \
