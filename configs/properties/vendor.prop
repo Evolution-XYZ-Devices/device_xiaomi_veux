@@ -251,6 +251,7 @@ debug.sf.earlyGl.sf.duration=11666666
 debug.sf.earlyGl.app.duration=12333333
 debug.sf.enable_hwc_vds=0
 debug.sf.disable_backpressure=1
+debug.sf.latch_unsignaled=0
 debug.sf.treat_170m_as_sRGB=1
 debug.sf.predict_hwc_composition_strategy=0
 ro.surface_flinger.has_HDR_display=true
