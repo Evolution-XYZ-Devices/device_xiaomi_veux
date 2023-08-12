@@ -836,7 +836,7 @@
     <!-- Enables or disables haptic effect when the text insertion/selection handle is moved
          manually by the user. Off by default, since the expected haptic feedback may not be
          available on some devices. -->
-    <bool name="config_enableHapticTextHandle">true</bool>
+    <bool name="config_enableHapticTextHandle">false</bool>
 
     <!-- Hardware keys present on the device, stored as a bit field.
          This integer should equal the sum of the corresponding value for each
