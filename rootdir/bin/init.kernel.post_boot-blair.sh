@@ -92,7 +92,8 @@ echo 5 > /proc/sys/kernel/sched_ravg_window_nr_ticks
 echo 20000000 > /proc/sys/kernel/sched_task_unfilter_period
 
 # cpuset parameters
-echo 0-2     > /dev/cpuset/background/cpus
+echo 0-1     > /dev/cpuset/background/cpus
+echo 0-3     > /dev/cpuset/restricted/cpus
 echo 0-3     > /dev/cpuset/system-background/cpus
 echo 4-7     > /dev/cpuset/foreground/boost/cpus
 echo 0-2,4-7 > /dev/cpuset/foreground/cpus
