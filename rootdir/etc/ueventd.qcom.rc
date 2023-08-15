@@ -85,6 +85,9 @@ firmware_directories /vendor/firmware_mnt/image/
 #goodix fingerprint
 /dev/goodix_fp   0660   system   system
 
+# KGSL
+/sys/class/kgsl/kgsl-3d0    perfcounter              0660    root    shell
+
 # wlan
 /sys/devices/platform/soc/1c00000.qcom,pcie/pci0000:00/0000:00:00.0/0000:01:00.0/net/wlan*/queues/rx-* rps_cpus      0660   system     system
 
