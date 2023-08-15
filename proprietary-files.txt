@@ -151,6 +151,9 @@ vendor/etc/sound_trigger_mixer_paths.xml
 vendor/etc/sound_trigger_platform_info.xml
 vendor/etc/usb_audio_policy_configuration.xml
 
+# Audio FX modules - from cheetah-tq3a.230605.012
+vendor/lib/soundfx/libspatialaudio.so|b26727b8887dad56f5e183f7145487c88bd2f065
+
 # Audio FX modules
 system_ext/etc/permissions/audiosphere.xml
 -system_ext/framework/audiosphere.jar
