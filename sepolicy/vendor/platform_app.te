@@ -28,3 +28,6 @@ allow platform_app vendor_xdsp_device:chr_file { ioctl open read write };
 get_prop(platform_app, vendor_camera_prop)
 get_prop(platform_app, vendor_fingerprint_prop)
 allow platform_app vendor_sys_video_prop:file { read };
+
+# we don't have google battery support, add dummy domain and let it return null by selinux denial
+dontaudit platform_app hal_dummy_googlebattery_service:service_manager find;
