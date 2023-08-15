@@ -132,10 +132,6 @@ echo -6 > /sys/devices/system/cpu/cpu6/sched_load_boost
 echo -6 > /sys/devices/system/cpu/cpu7/sched_load_boost
 echo 85 > /sys/devices/system/cpu/cpufreq/policy6/schedutil/hispeed_load
 
-# configure input boost settings
-echo "0:1190400" > /sys/devices/system/cpu/cpu_boost/input_boost_freq
-echo 200 > /sys/devices/system/cpu/cpu_boost/input_boost_ms
-
 # Enable bus-dcvs
 for device in /sys/devices/platform/soc
 do

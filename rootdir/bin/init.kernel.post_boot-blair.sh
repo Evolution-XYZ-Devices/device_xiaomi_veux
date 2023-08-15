@@ -132,10 +132,6 @@ echo 85 > /sys/devices/system/cpu/cpufreq/policy6/schedutil/hispeed_load
 # setup runtime schedTune
 echo 10 > /dev/stune/top-app/schedtune.boost
 
-# configure input boost settings
-echo "0:1804800" > /sys/devices/system/cpu/cpu_boost/input_boost_freq
-echo 200 > /sys/devices/system/cpu/cpu_boost/input_boost_ms
-
 # Enable bus-dcvs
 for device in /sys/devices/platform/soc
 do
