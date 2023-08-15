@@ -3,6 +3,10 @@ suspend.short_suspend_threshold_millis=2000
 suspend.short_suspend_backoff_enabled=true
 suspend.max_sleep_time_millis=40000
 
+# Audio FX module
+persist.vendor.audio.spatializer.speaker_enabled=true
+ro.audio.spatializer_enabled=true
+
 # Charger
 ro.charger.enable_suspend=true
 
