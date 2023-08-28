@@ -2,6 +2,9 @@
 vendor.xiaomi.hardware.cameraperf::IMiCameraPerfService         u:object_r:vendor_hal_cameraperf_hwservice:s0
 vendor.xiaomi.hardware.campostproc::IMiPostProcService          u:object_r:vendor_hal_camerapostproc_xiaomi_hwservice:s0
 
+# Dolby
+vendor.dolby.hardware.dms::IDms                                                          u:object_r:hal_dms_hwservice:s0
+
 # Fingerprint
 com.fingerprints.extension::IFingerprintSensorTest              u:object_r:hal_fingerprint_hwservice:s0
 com.fingerprints.extension::IFingerprintNavigation              u:object_r:hal_fingerprint_hwservice:s0

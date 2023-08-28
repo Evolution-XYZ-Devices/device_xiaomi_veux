@@ -789,6 +789,8 @@
         <item>"/system/system_ext/lib64/libpenguin.so"</item>
         <item>"/system/system_ext/lib64/libpenguin_impl.so"</item>
         <item>"/system_ext/priv-app/SystemUI/SystemUI.apk"</item>
+        <item>"/system_ext/priv-app/MotoDolbyDax3/MotoDolbyDax3.apk"</item>
+        <item>"/system_ext/priv-app/daxService/daxService.apk"</item>
         <item>"/vendor/lib/libcamxexternalformatutils.so"</item>
         <item>"/vendor/lib/libipebpsstriping170.so"</item>
         <item>"/vendor/lib/libipebpsstriping.so"</item>
