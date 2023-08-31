@@ -340,6 +340,7 @@ PRODUCT_PACKAGES += \
     CarrierConfigOverlayVeux \
     DialerOverlayVeux \
     FrameworksResOverlayVeux \
+    NfcOverlayVeux \
     SettingsOverlayVeux \
     SettingsProviderOverlayVeux \
     SettingsProviderOverlayS88006AA1 \
