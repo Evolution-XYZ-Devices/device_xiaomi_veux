@@ -972,9 +972,6 @@
     -->
     <bool name="config_powerDecoupleInteractiveModeFromDisplay">true</bool>
 
-    <!-- Preferred max refresh rate at keyguard, if supported by the display. -->
-    <integer name="config_keyguardMaxRefreshRate">60</integer>
-
     <!-- The number of volume steps for the notification stream -->
     <integer name="config_audio_notif_vol_steps">15</integer>
 
