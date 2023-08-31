@@ -136,9 +136,6 @@ vendor.audio_hal.period_size=192
 vendor.bluetooth.soc=hastings
 vendor.voice.path.for.pcm.voip=true
 
-# Audio volume steps
-ro.config.vc_call_vol_steps=11
-
 # Bluetooth
 bluetooth.device.class_of_device=90,2,12
 bluetooth.hardware.power.idle_cur_ma=3

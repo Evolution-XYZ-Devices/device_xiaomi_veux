@@ -974,4 +974,16 @@
 
     <!-- Preferred max refresh rate at keyguard, if supported by the display. -->
     <integer name="config_keyguardMaxRefreshRate">60</integer>
+
+    <!-- The number of volume steps for the notification stream -->
+    <integer name="config_audio_notif_vol_steps">15</integer>
+
+    <!-- The default volume for the notification stream -->
+    <integer name="config_audio_notif_vol_default">11</integer>
+
+    <!-- The number of volume steps for the ring stream -->
+    <integer name="config_audio_ring_vol_steps">15</integer>
+
+    <!-- The default volume for the ring stream -->
+    <integer name="config_audio_ring_vol_default">11</integer>
 </resources>
