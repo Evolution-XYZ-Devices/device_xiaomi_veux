@@ -77,7 +77,7 @@ static const variant_info_t veux_jp_info = {
     .marketname = "Redmi Note 11 Pro 5G",
     .model = "2201116SR",
     .name = "veux_jp",
-    .build_fingerprint = "Redmi/veux_jp/veux:11/SKQ1.211006.001/V13.0.3.0.SKCJPXM:user/release-keys",
+    .build_fingerprint = "Redmi/veux_jp/veux:13/TKQ1.221114.001/V14.0.1.0.TKCJPXM:user/release-keys",
 
     .nfc = true,
 };
