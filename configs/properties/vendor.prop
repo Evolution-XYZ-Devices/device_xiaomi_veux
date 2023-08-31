@@ -228,7 +228,7 @@ vendor.display.svi.config=1
 vendor.display.defer_fps_frame_count=2
 ro.vendor.display.type=oled
 vendor.display.use_layer_ext=0
-vendor.display.use_smooth_motion=0
+vendor.display.use_smooth_motion=1
 vendor.gralloc.disable_ubwc=0
 
 # DPM
