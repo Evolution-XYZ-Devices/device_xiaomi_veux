@@ -983,4 +983,7 @@
 
     <!-- The default volume for the ring stream -->
     <integer name="config_audio_ring_vol_default">11</integer>
+
+    <!-- Pocket Lock -->
+    <bool name="config_pocketModeSupported">true</bool>
 </resources>
