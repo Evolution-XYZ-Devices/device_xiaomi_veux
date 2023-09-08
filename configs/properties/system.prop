@@ -86,5 +86,8 @@ persist.radio.is_vonr_enabled_1=true
 # Sensors
 persist.vendor.sensors.enable.mag_filter=true
 
+# SurfaceFlinger
+ro.sf.skip_set_active_mode_when_off=1
+
 # WiFi Display
 persist.debug.wfd.enable=1
