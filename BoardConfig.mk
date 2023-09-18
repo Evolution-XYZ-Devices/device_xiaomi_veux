@@ -86,7 +86,6 @@ HWUI_COMPILE_FOR_PERF := true
 
 # Init
 TARGET_INIT_VENDOR_LIB := //$(DEVICE_PATH):init_xiaomi_veux
-TARGET_RECOVERY_DEVICE_MODULES := init_xiaomi_veux
 
 # Kernel
 BOARD_INCLUDE_DTB_IN_BOOTIMG := true
