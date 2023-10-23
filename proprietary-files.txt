@@ -399,7 +399,6 @@ vendor/lib64/libmctfengine_stub.so
 vendor/lib64/libmialgoengine.so
 vendor/lib64/libmibokeh_712.so
 vendor/lib64/libmm-color-convertor.so
-vendor/lib64/libmorpho_Lowlight.so
 vendor/lib64/libmpbase.so
 vendor/lib64/libofflinedump.so
 vendor/lib64/libofflinelog.so
@@ -421,7 +420,6 @@ vendor/lib64/libwa_dof.so
 vendor/lib64/libwa_refocus.so
 vendor/lib64/libwa_rtdof.so
 vendor/lib64/libwa_widelens_undistort.so
-vendor/lib64/libxml2_vendor.so
 vendor/lib64/vendor.qti.hardware.camera.postproc@1.0-service-impl.so
 
 # Camera arcsoft
@@ -1297,18 +1295,6 @@ vendor/firmware/vpu20_4v.b19
 vendor/firmware/vpu20_4v.mbn
 vendor/firmware/vpu20_4v.mdt
 vendor/firmware/vpu20_4v_unsigned.mbn
-
-# MIUICamera
-system/priv-app/MiuiCamera/MiuiCamera.apk
-system/etc/sysconfig/miuicamera-hiddenapi-package-allowlist.xml
-system/etc/permissions/privapp-permissions-miuicamera.xml
-system/etc/public.libraries-xiaomi.txt
-system/lib64/libcamera_mianode_jni.xiaomi.so
-system/lib64/libcamera_algoup_jni.xiaomi.so
-system/lib64/libgui-xiaomi.so
-system/lib64/libmicampostproc_client.so
-system/lib64/vendor.xiaomi.hardware.campostproc@1.0.so
-vendor/etc/camera/camera_cnf.txt
 
 # Mlipay
 vendor/bin/mlipayd@1.1
