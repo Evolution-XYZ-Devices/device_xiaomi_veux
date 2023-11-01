@@ -1,6 +1,3 @@
-allow platform_app hal_dms_hwservice:hwservice_manager find;
-binder_call(platform_app, hal_dms_default)
-
 typeattribute platform_app system_executes_vendor_violators;
 typeattribute platform_app halclientdomain;
 typeattribute platform_app vendor_hal_camerapostproc_xiaomi_client;

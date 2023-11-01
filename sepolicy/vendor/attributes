@@ -1,7 +1,3 @@
-attribute hal_dms;
-attribute hal_dms_client;
-attribute hal_dms_server;
-
 # Camera
 attribute vendor_hal_cameraperf;
 attribute vendor_hal_cameraperf_client;

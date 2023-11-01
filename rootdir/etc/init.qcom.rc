@@ -168,10 +168,6 @@ on boot
     # an ack packet comes out of order
     write /proc/sys/net/netfilter/nf_conntrack_tcp_be_liberal 1
 
-    # Set the console loglevel to < KERN_WARN
-    # Set the default message loglevel to KERN_INFO
-    write /proc/sys/kernel/printk "4 6 1 7"
-
     # Allow access for CCID command/response timeout configuration
     chown system system /sys/module/ccid_bridge/parameters/bulk_msg_timeout
 
@@ -406,18 +402,6 @@ service iop /system/vendor/bin/iop
     group root
     disabled
     socket iop seqpacket 0666 root system
-
-service qcomsysd /system/vendor/bin/qcom-system-daemon
-    class main
-    user root
-    group root diag oem_2901
-    disabled
-
-on property:persist.vendor.qcomsysd.enabled=1
-    enable qcomsysd
-
-on property:persist.vendor.qcomsysd.enabled=0
-    stop qcomsysd
 
 on property:ro.vendor.iocgrp.config=1
     mkdir /dev/blkio

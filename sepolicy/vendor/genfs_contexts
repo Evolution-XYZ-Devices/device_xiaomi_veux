@@ -10,10 +10,13 @@ genfscon sysfs /devices/platform/soc/soc:qcom,cpu6-cpu-l3-lat                   
 genfscon sysfs /devices/platform/soc/soc:qcom,gpubw                                                                                 u:object_r:sysfs_msm_subsys:s0
 genfscon sysfs /devices/platform/soc/soc:qcom,gpubw/devfreq                                                                         u:object_r:sysfs_msm_subsys:s0
 
-
 # Extcon sysfs
 genfscon sysfs /devices/platform/soc/1628000.qcom,msm-eud/extcon                                                                    u:object_r:sysfs_extcon:s0
 genfscon sysfs /devices/platform/soc/soc:rt-pd-manager/extcon                                                                       u:object_r:sysfs_extcon:s0
+
+# FEAS
+genfscon sysfs /module/perfmgr                                                                                                      u:object_r:sysfs_perfmgr:s0
+genfscon proc /perfmgr                                                                                                              u:object_r:proc_perfmgr:s0
 
 # Fingerprint
 genfscon sysfs /devices/platform/soc/soc:fpc1020                                                                                    u:object_r:vendor_sysfs_fingerprint:s0

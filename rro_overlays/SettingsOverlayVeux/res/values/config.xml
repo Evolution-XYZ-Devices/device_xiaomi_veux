@@ -22,6 +22,12 @@
     <!-- Whether to show min/max refresh rate in display settings -->
     <bool name="config_show_refresh_rate_controls">true</bool>
 
+    <!-- Whether to show peak refresh rate in display settings -->
+    <bool name="config_show_peak_refresh_rate_switch">true</bool>
+
+    <!-- Whether to show min refresh rate in display settings -->
+    <bool name="config_show_min_refresh_rate_switch">true</bool>
+
     <!-- The number of vibration intensity levels supported by the device.
          Note that this should correspond to the ability to vary the vibration amplitude, with
          enough dynamic range to have at least as many distinct intensity levels as defined here.
@@ -38,10 +44,10 @@
     -->
     <integer name="config_vibration_supported_intensity_levels">3</integer>
 
+
     <!-- Battery health -->
     <string name="config_batCurCap">/sys/class/power_supply/battery/charge_full</string>
     <string name="config_batDesCap">/sys/class/power_supply/battery/charge_full_design</string>
     <string name="config_batChargeCycle">/sys/class/power_supply/battery/cycle_count</string>
     <bool name="config_supportBatteryHealth">true</bool>
-
 </resources>

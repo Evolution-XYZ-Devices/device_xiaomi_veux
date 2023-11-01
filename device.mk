@@ -1,5 +1,6 @@
 #
 # Copyright (C) 2023 The LineageOS Project
+#               2022-2023 The Evolution X Project
 #
 # SPDX-License-Identifier: Apache-2.0
 #
@@ -97,9 +98,6 @@ PRODUCT_COPY_FILES += \
     frameworks/av/services/audiopolicy/config/a2dp_in_audio_policy_configuration.xml:$(TARGET_COPY_OUT_VENDOR)/etc/a2dp_in_audio_policy_configuration.xml \
     frameworks/av/services/audiopolicy/config/bluetooth_audio_policy_configuration.xml:$(TARGET_COPY_OUT_VENDOR)/etc/bluetooth_audio_policy_configuration.xml
 
-# Blur
-TARGET_ENABLE_BLUR := true
-
 # Boot Animation
 TARGET_SCREEN_HEIGHT := 2400
 TARGET_SCREEN_WIDTH := 1080
@@ -186,16 +184,6 @@ PRODUCT_PACKAGES += \
     vendor.qti.hardware.display.mapper@3.0.vendor \
     vendor.qti.hardware.display.mapper@4.0.vendor
 
-# Dolby
-PRODUCT_COPY_FILES += \
-    $(LOCAL_PATH)/configs/dolby/dax-default.xml:$(TARGET_COPY_OUT_ODM)/etc/dolby/dax-default.xml \
-    $(LOCAL_PATH)/configs/dolby/media_codecs_dolby_audio.xml:$(TARGET_COPY_OUT_VENDOR)/etc/media_codecs_dolby_audio.xml \
-    $(LOCAL_PATH)/configs/dolby/config-com.dolby.daxappui.xml:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/sysconfig/config-com.dolby.daxappui.xml \
-    $(LOCAL_PATH)/configs/dolby/config-com.dolby.daxservice.xml:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/sysconfig/config-com.dolby.daxservice.xml \
-    $(LOCAL_PATH)/configs/dolby/hiddenapi-com.dolby.daxservice.xml:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/sysconfig/hiddenapi-com.dolby.daxservice.xml \
-    $(LOCAL_PATH)/configs/dolby/privapp-com.dolby.daxappui.xml:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/permissions/privapp-com.dolby.daxappui.xml \
-    $(LOCAL_PATH)/configs/dolby/privapp-com.dolby.daxservice.xml:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/permissions/privapp-com.dolby.daxservice.xml
-
 # DRM
 PRODUCT_PACKAGES += \
     android.hardware.drm-service.clearkey \
@@ -204,10 +192,6 @@ PRODUCT_PACKAGES += \
 # Fastbootd
 PRODUCT_PACKAGES += \
     fastbootd
-
-# Filesystem
-PRODUCT_PACKAGES += \
-    fs_config_files
 
 # Fingerprint
 PRODUCT_PACKAGES += \
@@ -323,7 +307,10 @@ PRODUCT_PACKAGES += \
     vendor.nxp.nxpese@1.0 \
     vendor.nxp.nxpnfclegacy@1.0 \
     vendor.nxp.nxpnfclegacy@1.0.vendor \
-    Tag
+    Tag \
+    NfcNci \
+    SecureElement \
+    com.android.nfc_extras
 
 # OMX
 PRODUCT_PACKAGES += \
@@ -345,9 +332,6 @@ PRODUCT_PACKAGES += \
 
 # Overlays
 PRODUCT_ENFORCE_RRO_TARGETS := *
-DEVICE_PACKAGE_OVERLAYS += \
-    $(LOCAL_PATH)/overlay
-
 PRODUCT_PACKAGES += \
     CarrierConfigOverlayVeux \
     DialerOverlayVeux \
@@ -362,7 +346,6 @@ PRODUCT_PACKAGES += \
     SettingsProviderOverlayS88106BA1 \
     SettingsProviderOverlayS88107BA1 \
     SystemUIOverlayVeux \
-    SettingsLibOverlayVeux \
     TelephonyOverlayVeux \
     TetheringResOverlayVeux \
     WifiOverlayVeux \
@@ -383,6 +366,7 @@ PRODUCT_PACKAGES += \
 
 # Perf
 PRODUCT_PACKAGES += \
+    vendor.qti.hardware.perf@2.2 \
     vendor.qti.hardware.perf@2.2.vendor
 
 # Permissions
@@ -463,10 +447,6 @@ PRODUCT_PACKAGES += \
     com.android.ims.rcsmanager \
     PresencePolling \
     RcsService
-
-# Remove unwanted packages
-PRODUCT_PACKAGES += \
-    RemovePkgs
 
 # RIL
 PRODUCT_PACKAGES += \
@@ -549,6 +529,10 @@ PRODUCT_PACKAGES += \
 PRODUCT_BOOT_JARS += \
     telephony-ext
 
+# TrustedUI
+PRODUCT_PACKAGES += \
+    android.hidl.memory.block@1.0.vendor
+
 # Update Engine
 PRODUCT_PACKAGES += \
     update_engine \
@@ -597,9 +581,6 @@ PRODUCT_PACKAGES += \
 
 PRODUCT_COPY_FILES += \
     $(call find-copy-subdir-files,*,$(LOCAL_PATH)/configs/wifi/,$(TARGET_COPY_OUT_VENDOR)/etc/wifi)
-
-# Inherit the proprietary files
-include vendor/xiaomi/veux/veux-vendor.mk
 
 # Get non-open-source specific aspects
 $(call inherit-product, vendor/xiaomi/veux/veux-vendor.mk)

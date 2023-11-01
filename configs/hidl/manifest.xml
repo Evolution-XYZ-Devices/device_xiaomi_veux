@@ -349,6 +349,16 @@
         <fqname>@1.0::IDspService/dspservice</fqname>
     </hal>
     <hal format="hidl">
+        <name>vendor.qti.hardware.eid</name> 
+        <transport>hwbinder</transport>
+        <version>1.0</version>
+        <interface>
+            <name>IEid</name>
+            <instance>default</instance>
+        </interface> 
+        <fqname>@1.0::IEid/default</fqname>
+    </hal>
+    <hal format="hidl">
         <name>vendor.qti.hardware.fm</name>
         <transport>hwbinder</transport>
         <version>1.0</version>
@@ -533,6 +543,16 @@
         <fqname>@1.0::IUimRemoteServiceServer/uimRemoteServer1</fqname>
     </hal>
     <hal format="hidl">
+        <name>vendor.qti.hardware.sensorscalibrate</name> 
+        <transport>hwbinder</transport>
+        <version>1.0</version>
+        <interface>
+            <name>ISensorsCalibrate</name>
+            <instance>default</instance> 
+        </interface>
+        <fqname>@1.0::ISensorsCalibrate/default</fqname>
+    </hal>
+    <hal format="hidl">
         <name>vendor.qti.hardware.soter</name>
         <transport>hwbinder</transport>
         <version>1.0</version>
@@ -571,15 +591,6 @@
             <instance>imsrtpservice</instance>
         </interface>
         <fqname>@3.0::IRTPService/imsrtpservice</fqname>
-    </hal>
-    <hal format="hidl">
-        <name>vendor.dolby.hardware.dms</name>
-        <transport>hwbinder</transport>
-        <version>2.0</version>
-        <interface>
-            <name>IDms</name>
-            <instance>default</instance>
-        </interface>
     </hal>
     <hal format="hidl">
         <name>vendor.silead.hardware.fingerprintext</name>

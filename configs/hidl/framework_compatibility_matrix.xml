@@ -212,7 +212,6 @@
     </hal>
     <hal format="hidl" optional="true">
         <name>vendor.dolby.hardware.dms</name>
-        <transport>hwbinder</transport>
         <version>2.0</version>
         <interface>
             <name>IDms</name>
@@ -460,6 +459,14 @@
             <name>IQtiExtendedFingerprint</name>
             <instance>default</instance>
         </interface>
+    </hal>
+     <hal format="hidl" optional="true">
+        <name>vendor.qti.hardware.eid</name> 
+        <version>1.0</version>
+        <interface>
+            <name>IEid</name>
+            <instance>default</instance>
+        </interface> 
     </hal>
     <hal format="hidl" optional="true">
         <name>vendor.qti.hardware.fm</name>
@@ -724,11 +731,11 @@
         </interface>
     </hal>
     <hal format="hidl" optional="true">
-        <name>vendor.qti.hardware.seccam</name>
+        <name>vendor.qti.hardware.sensorscalibrate</name>
         <version>1.0</version>
         <interface>
-            <name>ISecCam</name>
-            <instance>default</instance>
+            <name>ISensorsCalibrate</name>
+            <instance>default</instance> 
         </interface>
     </hal>
     <hal format="hidl" optional="true">
@@ -834,14 +841,6 @@
         <version>1.0-1</version>
         <interface>
             <name>IQesdhal</name>
-            <instance>default</instance>
-        </interface>
-    </hal>
-    <hal format="hidl" optional="true">
-        <name>vendor.qti.voiceprint</name>
-        <version>1.0</version>
-        <interface>
-            <name>IQtiVoicePrintService</name>
             <instance>default</instance>
         </interface>
     </hal>

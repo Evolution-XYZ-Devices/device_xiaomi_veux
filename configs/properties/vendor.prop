@@ -136,6 +136,9 @@ vendor.audio_hal.period_size=192
 vendor.bluetooth.soc=hastings
 vendor.voice.path.for.pcm.voip=true
 
+# Audio volume steps
+ro.config.vc_call_vol_steps=11
+
 # Bluetooth
 bluetooth.device.class_of_device=90,2,12
 bluetooth.hardware.power.idle_cur_ma=3
@@ -202,9 +205,6 @@ vendor.display.enable_posted_start_dyn=2
 vendor.display.enable_allow_idle_fallback=1
 vendor.display.enable_rc_support=1
 ro.vendor.display.sensortype=2
-persist.sys.sf.color_mode=9
-persist.sys.sf.native_mode=2
-debug.sf.enable_egl_image_tracker=1
 ro.vendor.display.svi=1
 vendor.display.comp_mask=0
 vendor.display.disable_excl_rect_partial_fb=1
@@ -239,8 +239,6 @@ persist.vendor.dpmhalservice.enable=1
 vendor.gatekeeper.disable_spu=true
 
 # Graphics
-debug.sf.auto_latch_unsignaled=true
-debug.sf.enable_advanced_sf_phase_offset=1
 debug.sf.disable_client_composition_cache=1
 debug.sf.enable_transaction_tracing=false
 debug.sf.frame_rate_multiple_threshold=120
@@ -280,7 +278,9 @@ vendor.display.enable_optimize_refresh=1
 vendor.display.qdcm.disable_factory_mode=1
 vendor.display.qdcm.mode_combine=1
 vendor.gralloc.disable_ubwc=0
+persist.sys.sf.color_mode=0
 persist.sys.sf.color_saturation=1.0
+persist.sys.sf.native_mode=1
 ro.hardware.egl=adreno
 ro.hardware.vulkan=adreno
 
@@ -360,15 +360,6 @@ ro.hw_timeout_multiplier=3
 # Wifi
 ro.hardware.wlan.dbs=0
 wifi.aware.interface=wifi-aware0
-
-# Dolby
-vendor.audio.dolby.ds2.enabled=false
-vendor.audio.dolby.ds2.hardbypass=false
-ro.vendor.dolby.dax.version=DAX3_3.6.0.12_r1
-ro.vendor.product.device.db=OP_DEVICE
-ro.vendor.product.manufacturer.db=OP_PHONE
-vendor.product.device=OP_PHONE
-vendor.product.manufacturer=OPD
 
 # Zygote
 zygote.critical_window.minute=10
