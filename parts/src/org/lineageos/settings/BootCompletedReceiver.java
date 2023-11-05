@@ -74,5 +74,10 @@ public class BootCompletedReceiver extends BroadcastReceiver {
         dm.overrideHdrTypes(Display.DEFAULT_DISPLAY, new int[]{
                 HdrCapabilities.HDR_TYPE_DOLBY_VISION, HdrCapabilities.HDR_TYPE_HDR10,
                 HdrCapabilities.HDR_TYPE_HLG, HdrCapabilities.HDR_TYPE_HDR10_PLUS});
+
+        // Gesture: Double tap FPS
+        if (GestureUtils.isFpDoubleTapEnabled(context)) {
+            GestureUtils.setFingerprintNavigation(true);
+        }
     }
 }

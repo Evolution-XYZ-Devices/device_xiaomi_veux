@@ -25,14 +25,22 @@ import android.widget.Switch;
 import androidx.preference.ListPreference;
 import androidx.preference.Preference;
 import androidx.preference.Preference.OnPreferenceChangeListener;
+<<<<<<< HEAD
 import androidx.preference.PreferenceFragmentCompat;
+=======
+import androidx.preference.PreferenceFragment;
+>>>>>>> bd4f092 (marble: Introduce double tap on fingerprint sensor gesture)
 
 import com.android.settingslib.widget.MainSwitchPreference;
 import com.android.settingslib.widget.OnMainSwitchChangeListener;
 
 import org.lineageos.settings.R;
 
+<<<<<<< HEAD
 public class FpDoubleTapFragment extends PreferenceFragmentCompat implements
+=======
+public class FpDoubleTapFragment extends PreferenceFragment implements
+>>>>>>> bd4f092 (marble: Introduce double tap on fingerprint sensor gesture)
         OnPreferenceChangeListener, OnMainSwitchChangeListener {
 
     private static final String TAG = "FpDoubleTapFragment";

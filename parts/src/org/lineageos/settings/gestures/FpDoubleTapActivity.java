@@ -29,7 +29,11 @@ public class FpDoubleTapActivity extends CollapsingToolbarBaseActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
 
+<<<<<<< HEAD
         getSupportFragmentManager().beginTransaction().replace(R.id.content_frame,
+=======
+        getFragmentManager().beginTransaction().replace(R.id.content_frame,
+>>>>>>> bd4f092 (marble: Introduce double tap on fingerprint sensor gesture)
                 new FpDoubleTapFragment(), TAG).commit();
     }
 

@@ -26,7 +26,10 @@ import android.net.Uri;
 import android.os.Bundle;
 
 import org.lineageos.settings.R;
+<<<<<<< HEAD
 import org.lineageos.settings.dolby.DolbyUtils;
+=======
+>>>>>>> bd4f092 (marble: Introduce double tap on fingerprint sensor gesture)
 import org.lineageos.settings.gestures.GestureUtils;
 
 import java.util.Arrays;
@@ -35,7 +38,10 @@ import java.util.List;
 /** Provide preference summary for injected items. */
 public class SummaryProvider extends ContentProvider {
 
+<<<<<<< HEAD
     private static final String KEY_DOLBY = "dolby";
+=======
+>>>>>>> bd4f092 (marble: Introduce double tap on fingerprint sensor gesture)
     private static final String KEY_FP_DOUBLE_TAP = "fp_double_tap";
 
     @Override
@@ -43,9 +49,12 @@ public class SummaryProvider extends ContentProvider {
         final Bundle bundle = new Bundle();
         String summary;
         switch (method) {
+<<<<<<< HEAD
             case KEY_DOLBY:
                 summary = getDolbySummary();
                 break;
+=======
+>>>>>>> bd4f092 (marble: Introduce double tap on fingerprint sensor gesture)
             case KEY_FP_DOUBLE_TAP:
                 summary = getFpDoubleTapSummary();
                 break;
@@ -87,6 +96,7 @@ public class SummaryProvider extends ContentProvider {
         throw new UnsupportedOperationException();
     }
 
+<<<<<<< HEAD
     private String getDolbySummary() {
         final DolbyUtils dolbyUtils = DolbyUtils.getInstance(getContext());
         final boolean dsOn = dolbyUtils.getDsOn();
@@ -101,6 +111,8 @@ public class SummaryProvider extends ContentProvider {
         }
     }
 
+=======
+>>>>>>> bd4f092 (marble: Introduce double tap on fingerprint sensor gesture)
     private String getFpDoubleTapSummary() {
         if (!GestureUtils.isFpDoubleTapEnabled(getContext())) {
             return getContext().getString(R.string.fp_double_tap_summary_off);
