@@ -291,6 +291,10 @@ debug.stagefright.omx_default_rank=0
 # NFC
 ro.vendor.se.type=HCE,UICC
 
+# HWUI
+debug.hwui.use_hint_manager=true
+debug.hwui.target_cpu_time_percent=30
+
 # Radio
 keyguard.no_require_sim=true
 persist.radio.multisim.config=dsds
