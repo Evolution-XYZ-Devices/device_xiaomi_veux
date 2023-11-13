@@ -490,6 +490,8 @@ PRODUCT_PACKAGES += \
     android.hardware.sensors@2.1-service.xiaomi_holi-multihal \
     libsensorndkbridge
 
+PRODUCT_BROKEN_VERIFY_USES_LIBRARIES := true
+
 # Shipping API Level
 PRODUCT_SHIPPING_API_LEVEL := 30
 
