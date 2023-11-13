@@ -287,6 +287,7 @@ ro.hardware.vulkan=adreno
 # Media
 debug.stagefright.ccodec=4
 debug.stagefright.omx_default_rank=0
+persist.mm.enable.prefetch=true
 
 # NFC
 ro.vendor.se.type=HCE,UICC
