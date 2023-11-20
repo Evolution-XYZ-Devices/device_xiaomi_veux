@@ -1,3 +1,0 @@
-type devicesettings_app, domain;
-typeattribute devicesettings_app mlstrustedsubject;
-dontaudit devicesettings_app default_prop:file read;

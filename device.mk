@@ -156,10 +156,6 @@ PRODUCT_AAPT_PREF_CONFIG := xxhdpi
 PRODUCT_PACKAGES += \
     disable_configstore
 
-# DeviceSettings
-PRODUCT_PACKAGES += \
-    XiaomiParts
-
 # Dex
 PRODUCT_ART_TARGET_INCLUDE_DEBUG_BUILD := false
 PRODUCT_DEX_PREOPT_DEFAULT_COMPILER_FILTER := verify
