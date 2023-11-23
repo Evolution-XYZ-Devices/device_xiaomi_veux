@@ -57,7 +57,8 @@ PRODUCT_PACKAGES += \
     android.hardware.audio@7.0-impl \
     android.hardware.audio.effect@7.0-impl \
     android.hardware.audio.service \
-    android.hardware.soundtrigger@2.3-impl
+    android.hardware.soundtrigger@2.3-impl \
+    audio.primary.default
 
 PRODUCT_PACKAGES += \
     audioadsprpcd \
@@ -315,7 +316,8 @@ PRODUCT_PACKAGES += \
 # Media
 PRODUCT_PACKAGES += \
     android.hardware.media.omx@1.0-service \
-    vendor.qti.media.c2@1.0-service
+    vendor.qti.media.c2@1.0-service \
+    audio.primary.default
 
 PRODUCT_PACKAGES += \
     libavservices_minijail \

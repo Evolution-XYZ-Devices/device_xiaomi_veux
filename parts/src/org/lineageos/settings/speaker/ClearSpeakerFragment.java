@@ -26,14 +26,14 @@ import android.os.Looper;
 import android.util.Log;
 
 import androidx.preference.Preference;
-import androidx.preference.PreferenceFragment;
+import androidx.preference.PreferenceFragmentCompat;
 import androidx.preference.SwitchPreference;
 
 import org.lineageos.settings.R;
 
 import java.io.IOException;
 
-public class ClearSpeakerFragment extends PreferenceFragment implements
+public class ClearSpeakerFragment extends PreferenceFragmentCompat implements
         Preference.OnPreferenceChangeListener {
 
     private static final String TAG = "ClearSpeakerFragment";
@@ -67,8 +67,8 @@ public class ClearSpeakerFragment extends PreferenceFragment implements
 
     @Override
     public void onStop() {
-        stopPlaying();
         super.onStop();
+        stopPlaying();
     }
 
     public boolean startPlaying() {
@@ -96,15 +96,15 @@ public class ClearSpeakerFragment extends PreferenceFragment implements
     public void stopPlaying() {
         if (mMediaPlayer != null && mMediaPlayer.isPlaying()) {
             try {
-            mMediaPlayer.stop();
+                mMediaPlayer.stop();
             } catch (IllegalStateException e) {
                 Log.e(TAG, "Failed to stop media player!", e);
             } finally {
-            mMediaPlayer.reset();
-            mMediaPlayer.release();
+                mMediaPlayer.reset();
+                mMediaPlayer.release();
                 mMediaPlayer = null;
+            }
         }
-    }
         mClearSpeakerPref.setEnabled(true);
         mClearSpeakerPref.setChecked(false);
     }

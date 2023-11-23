@@ -35,9 +35,9 @@ import android.util.Log;
 public class ThermalService extends Service {
 
     private static final String TAG = "ThermalService";
-    private static final boolean DEBUG = false;
 
-    private String mPreviousApp;
+    private boolean mScreenOn = true;
+    private String mCurrentApp = "";
     private ThermalUtils mThermalUtils;
 
     private IActivityTaskManager mActivityTaskManager;
@@ -45,14 +45,22 @@ public class ThermalService extends Service {
     private BroadcastReceiver mIntentReceiver = new BroadcastReceiver() {
         @Override
         public void onReceive(Context context, Intent intent) {
-            mPreviousApp = "";
-            mThermalUtils.setDefaultThermalProfile();
+            switch (intent.getAction()) {
+                case Intent.ACTION_SCREEN_OFF:
+                    mScreenOn = false;
+                    setThermalProfile();
+                    break;
+                case Intent.ACTION_SCREEN_ON:
+                    mScreenOn = true;
+                    setThermalProfile();
+                    break;
+            }
         }
     };
 
     @Override
     public void onCreate() {
-        if (DEBUG) Log.d(TAG, "Creating service");
+        dlog("Creating service");
         try {
             mActivityTaskManager = ActivityTaskManager.getService();
             mActivityTaskManager.registerTaskStackListener(mTaskListener);
@@ -66,7 +74,7 @@ public class ThermalService extends Service {
 
     @Override
     public int onStartCommand(Intent intent, int flags, int startId) {
-        if (DEBUG) Log.d(TAG, "Starting service");
+        dlog("Starting service");
         return START_STICKY;
     }
 
@@ -82,21 +90,35 @@ public class ThermalService extends Service {
         this.registerReceiver(mIntentReceiver, filter);
     }
 
+    private void setThermalProfile() {
+        if (mScreenOn) {
+            mThermalUtils.setThermalProfile(mCurrentApp);
+        } else {
+            mThermalUtils.setDefaultThermalProfile();
+        }
+    }
+
     private final TaskStackListener mTaskListener = new TaskStackListener() {
         @Override
         public void onTaskStackChanged() {
             try {
-                final RootTaskInfo info = mActivityTaskManager.getFocusedRootTaskInfo();
-                if (info == null || info.topActivity == null) {
-                    return;
-                }
-
-                String foregroundApp = info.topActivity.getPackageName();
-                if (!foregroundApp.equals(mPreviousApp)) {
-                    mThermalUtils.setThermalProfile(foregroundApp);
-                    mPreviousApp = foregroundApp;
+                final ActivityTaskManager.RootTaskInfo focusedTask =
+                        ActivityTaskManager.getService().getFocusedRootTaskInfo();
+                if (focusedTask != null && focusedTask.topActivity != null) {
+                    ComponentName taskComponentName = focusedTask.topActivity;
+                    String foregroundApp = taskComponentName.getPackageName();
+                    if (!foregroundApp.equals(mCurrentApp)) {
+                        mCurrentApp = foregroundApp;
+                        setThermalProfile();
+                    }
                 }
             } catch (Exception e) {}
         }
     };
+
+    private static void dlog(String msg) {
+        if (Log.isLoggable(TAG, Log.DEBUG)) {
+            Log.d(TAG, msg);
+        }
+    }
 }
