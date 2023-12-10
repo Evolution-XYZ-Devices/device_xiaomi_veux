@@ -327,6 +327,7 @@ PRODUCT_PACKAGES += \
 # Overlays
 PRODUCT_ENFORCE_RRO_TARGETS := *
 PRODUCT_PACKAGES += \
+    AvoidAppsInCutoutOverlay \
     CarrierConfigOverlayVeux \
     DialerOverlayVeux \
     FrameworksResOverlayVeux \
