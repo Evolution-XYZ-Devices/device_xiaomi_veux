@@ -243,7 +243,10 @@ PRODUCT_PACKAGES += \
     android.hardware.gnss@2.1-impl-qti \
     android.hardware.gnss@2.1-service-qti \
     android.hardware.gnss@1.1.vendor \
-    android.hardware.gnss@2.1.vendor
+    android.hardware.gnss@2.1.vendor \
+    android.hardware.gnss-V1-ndk.vendor \
+    android.hardware.power@1.2.vendor \
+    libgrpc++_unsecure.vendor
 
 PRODUCT_PACKAGES += \
     liblocation_api \
@@ -264,6 +267,13 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     gnss@2.0-base.policy \
     gnss@2.0-xtra-daemon.policy
+
+PRODUCT_COPY_FILES += \
+    frameworks/native/data/etc/android.hardware.location.gps.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/android.hardware.location.gps.xml
+
+PRODUCT_COPY_FILES += \
+    $(LOCAL_PATH)/gps/etc/gps.conf:$(TARGET_COPY_OUT_VENDOR)/gps/etc/gps.conf \
+    $(LOCAL_PATH)/gps/etc/gps.conf:$(TARGET_COPY_OUT_VENDOR)/etc/gps.conf
 
 # Freeform Multiwindow
 PRODUCT_COPY_FILES += \
