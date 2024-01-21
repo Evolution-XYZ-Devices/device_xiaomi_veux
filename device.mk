@@ -590,7 +590,11 @@ PRODUCT_PACKAGES += \
     libvndksupport \
     libvndksupport.vendor
 
-# Wi-Fi
+# Charger
+PRODUCT_PACKAGES += \
+    libsuspend
+
+# WiFi
 PRODUCT_PACKAGES += \
     android.hardware.wifi-service \
     vendor.qti.hardware.wifi.hostapd@1.2.vendor \
