@@ -331,6 +331,7 @@ telephony.lteOnCdmaDevice=1
 # Perf
 ro.vendor.extension_library=libqti-perfd-client.so
 ro.vendor.perf.scroll_opt=true
+vendor.perf.framepacing.enable=1
 
 # Sensors
 persist.vendor.sensors.debug.ssc_qmi_debug=true
