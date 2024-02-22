@@ -347,7 +347,6 @@ persist.cust.tel.eons=1
 
 # Perf
 ro.vendor.extension_library=libqti-perfd-client.so
-ro.vendor.perf.scroll_opt=true
 vendor.perf.framepacing.enable=1
 
 # RAM
