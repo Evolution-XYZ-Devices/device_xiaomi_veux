@@ -344,6 +344,17 @@ ro.vendor.extension_library=libqti-perfd-client.so
 ro.vendor.perf.scroll_opt=true
 vendor.perf.framepacing.enable=1
 
+# RAM
+ro.config.fha_enable=true
+ro.sys.fw.bg_apps_limit=32
+ro.config.dha_cached_max=16
+ro.config.dha_empty_max=42
+ro.config.dha_empty_init=32
+ro.config.dha_lmk_scale=0.545
+ro.config.dha_th_rate=2.3
+ro.config.sdha_apps_bg_max=64
+ro.config.sdha_apps_bg_min=8
+
 # Sensors
 persist.vendor.sensors.debug.ssc_qmi_debug=true
 persist.vendor.sensors.enable.bypass_worker=true
