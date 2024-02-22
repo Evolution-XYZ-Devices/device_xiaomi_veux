@@ -338,6 +338,7 @@ ro.vendor.ril.svdo=false
 ro.vendor.ril.svlte1x=false
 ro.vendor.use_data_netmgrd=true
 telephony.lteOnCdmaDevice=1
+persist.cust.tel.eons=1
 
 # Perf
 ro.vendor.extension_library=libqti-perfd-client.so
