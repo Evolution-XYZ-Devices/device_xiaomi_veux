@@ -72,6 +72,12 @@ vendor.mm.enable.qcom_parser=16777215
 # NFC
 ro.nfc.port=I2C
 
+# Power Saving
+power.saving.mode=1
+pm.sleep_mode=1 
+ro.vold.umsdirtyratio=20
+ro.ril.disable.power.collapse=0
+
 # QC framework value-adds
 ro.vendor.qti.va_aosp.support=1
 
