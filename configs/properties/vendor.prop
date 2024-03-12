@@ -175,6 +175,9 @@ persist.vendor.btstack.enable.lpa=true
 camera.disable_zsl_mode=true
 persist.vendor.camera.logInfoMask=false
 
+# FS-verity
+ro.apk_verity.mode=2
+
 # SoC
 ro.soc.manufacturer=QTI
 ro.soc.model=SM6375
