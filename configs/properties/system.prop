@@ -33,6 +33,7 @@ persist.sys.fuse.passthrough.enable=true
 # Graphics
 ro.sf.force_hwc_brightness=1
 persist.sys.brightness.low.gamma=true
+vendor.display.disable_rotator_downscale=1
 
 # IMS
 persist.dbg.volte_avail_ovr=1
