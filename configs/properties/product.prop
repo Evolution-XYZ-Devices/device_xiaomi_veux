@@ -34,3 +34,6 @@ persist.sys.fflag.override.settings_enable_monitor_phantom_procs=false
 # Transcoding related property.
 debug.media.transcoding.codec_max_operating_rate_720P=240
 debug.media.transcoding.codec_max_operating_rate_1080P=120
+
+# Seamless transfer
+sys.fflag.override.settings_seamless_transfer=true
