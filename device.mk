@@ -361,6 +361,10 @@ PRODUCT_PACKAGES += \
     libstagefright_foundation \
     libstagefright_softomx.vendor
 
+# Overlay
+DEVICE_PACKAGE_OVERLAYS += \
+    $(LOCAL_PATH)/overlay
+
 # Overlays
 PRODUCT_ENFORCE_RRO_TARGETS := *
 PRODUCT_PACKAGES += \
