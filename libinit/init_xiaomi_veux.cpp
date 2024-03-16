@@ -20,7 +20,7 @@ static const variant_info_t veux_global_info = {
     .marketname = "Redmi Note 11 Pro 5G",
     .model = "2201116SG",
     .name = "veux_global",
-    .build_fingerprint = "Redmi/veux_global/veux:13/TKQ1.221114.001/V14.0.4.0.TKCMIXM:user/release-keys",
+    .build_fingerprint = "Redmi/veux_global/veux:13/TKQ1.221114.001/V14.0.6.0.TKCMIXM:user/release-keys",
 
     .nfc = true,
 };
@@ -46,7 +46,7 @@ static const variant_info_t veux_info = {
     .marketname = "Redmi Note 11E Pro",
     .model = "2201116SC",
     .name = "veux",
-    .build_fingerprint = "Redmi/veux/veux:12/TKQ1.221114.001/V14.0.1.0.TKCCNXM:user/release-keys",
+    .build_fingerprint = "Redmi/veux/veux:13/TKQ1.221114.001/V816.0.1.0.TKCCNXM:user/release-keys",
 
     .nfc = true,
 };
@@ -72,7 +72,7 @@ static const variant_info_t veux_jp_info = {
     .marketname = "Redmi Note 11 Pro 5G",
     .model = "2201116SR",
     .name = "veux_jp",
-    .build_fingerprint = "Redmi/veux_jp/veux:13/TKQ1.221114.001/V14.0.1.0.TKCJPXM:user/release-keys",
+    .build_fingerprint = "Redmi/veux_jp/veux:13/TKQ1.221114.001/V14.0.4.0.TKCJPXM:user/release-keys",
 
     .nfc = true,
 };
@@ -86,7 +86,7 @@ static const variant_info_t veux_p_global_info = {
     .marketname = "POCO X4 Pro 5G",
     .model = "2201116PG",
     .name = "veux_p_global",
-    .build_fingerprint = "POCO/veux_p_global/veux:13/TKQ1.221114.001/V14.0.4.0.TKCMIXM:user/release-keys",
+    .build_fingerprint = "POCO/veux_p_global/veux:13/TKQ1.221114.001/V14.0.6.0.TKCMIXM:user/release-keys",
 
     .nfc = true,
 };
