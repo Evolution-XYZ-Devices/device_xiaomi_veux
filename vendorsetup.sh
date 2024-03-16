@@ -2,7 +2,7 @@ echo 'Starting to clone stuffs needed for your device'
 
 echo 'Cloning Vendor tree [1/2]'
 # Vendor Tree
-git clone https://gitlab.com/JaswalAshish/vendor_xiaomi_veux vendor/xiaomi/veux
+git clone https://gitlab.com/ThePrateekBhatia/vendor_xiaomi_veux.git vendor/xiaomi/veux
 
 echo 'Cloning Kernel tree [2/2]'
 # Kernel Tree
